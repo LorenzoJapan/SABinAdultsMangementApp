@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#F4F7F6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111719" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="SAB Guide">
+<meta name="description" content="Clinical educational tool for clinicians: adult Staphylococcus aureus bacteremia management based on the 2026 IDSA/ESCMID consensus statements. No patient data stored or sent.">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<title>SAB Guide</title>
+<style>
+/* =========================================================
+   DESIGN TOKENS  (all colors checked for WCAG AA, ≥4.5:1)
+   ========================================================= */
+:root{
+  /* Color — light */
+  --c-bg:#F4F7F6;            /* app background (soft mint-white) */
+  --c-surface:#FFFFFF;       /* cards */
+  --c-surface-2:#EEF3F1;     /* inset / pressed */
+  --c-line:#DCE4E1;          /* hairlines & borders */
+  --c-ink:#1C2A2E;           /* primary text (deep charcoal) 13.7:1 */
+  --c-ink-2:#4F5F64;         /* secondary text 6.2:1 */
+  --c-primary:#0B6B66;       /* muted teal 6.3:1 on white */
+  --c-primary-ink:#FFFFFF;   /* text on primary */
+  --c-primary-soft:#E2F1EE;  /* teal tint */
+  --c-low:#0E6B45;  --c-low-bg:#E3F4EB;     /* low risk */
+  --c-inc:#874A00;  --c-inc-bg:#FCF0DC;     /* increased risk */
+  --c-focus:#A1352A;--c-focus-bg:#FBE8E5;   /* deep-seated focus */
+  --c-overlay:rgba(28,42,46,.32);
+
+  /* Type — SF Pro via system stack */
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-display:-apple-system,BlinkMacSystemFont,"SF Pro Display","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --t-large-title:700 34px/41px var(--font-display);
+  --t-title:700 22px/28px var(--font-display);
+  --t-headline:600 17px/22px var(--font);
+  --t-body:400 17px/24px var(--font);
+  --t-callout:400 16px/22px var(--font);
+  --t-footnote:400 13px/18px var(--font);
+  --t-caption:600 12px/16px var(--font);
+  --tracking-caps:.06em;
+
+  /* Shape, space, depth */
+  --r-sm:10px; --r-md:14px; --r-lg:20px; --r-pill:999px;
+  --s-1:4px; --s-2:8px; --s-3:12px; --s-4:16px; --s-5:20px; --s-6:24px; --s-8:32px;
+  --gutter:20px;
+  --touch:44px;              /* Apple HIG minimum */
+  --elev-1:0 1px 0 rgba(28,42,46,.04), 0 1px 2px rgba(28,42,46,.06);
+  --elev-2:0 6px 20px -8px rgba(28,42,46,.18);
+
+  /* Motion */
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --ease-spring:cubic-bezier(.34,1.4,.64,1);
+  --d-fast:140ms; --d-med:260ms; --d-slow:420ms;
+
+  --tabbar-h:56px;
+  --safe-top:env(safe-area-inset-top);
+  --safe-bottom:env(safe-area-inset-bottom);
+
+  /* Icon tiles (white glyph on color, iOS Settings style; all ≥4.5:1 with white) */
+  --i-teal:#0B6B66; --i-blue:#2A64A8; --i-green:#2C7A4B; --i-amber:#A45F00;
+  --i-coral:#B8402F; --i-rose:#A8385A; --i-slate:#52636A; --i-indigo:#4C5AA6;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --c-bg:#111719; --c-surface:#1B2326; --c-surface-2:#232D30; --c-line:#2E3A3D;
+    --c-ink:#E8EEEC; --c-ink-2:#A9B6B9;
+    --c-primary:#5FD1C4; --c-primary-ink:#0B1F1D; --c-primary-soft:#173331;
+    --c-low:#7FE0B0; --c-low-bg:#15291F;
+    --c-inc:#F5C27A; --c-inc-bg:#2E2310;
+    --c-focus:#F4A195; --c-focus-bg:#33191A;
+    --c-overlay:rgba(0,0,0,.5);
+    --elev-1:none; --elev-2:0 8px 24px -10px rgba(0,0,0,.6);
+  }
+}
+@media (prefers-reduced-motion: reduce){
+  :root{ --d-fast:0ms; --d-med:0ms; --d-slow:0ms; }
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow-x:clip}
+body{
+  font:var(--t-body); color:var(--c-ink); background:var(--c-bg);
+  -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
+  -webkit-tap-highlight-color:transparent;
+}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--c-primary);outline-offset:2px;border-radius:var(--r-sm)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+em.sp{font-style:italic}
+
+.app{max-width:500px;margin:0 auto;min-height:100%;position:relative}
+
+/* Nav bar (iOS style: compact bar + large title that scrolls) */
+.navbar{
+  position:sticky;top:0;z-index:20;
+  padding:calc(var(--safe-top) + 6px) var(--s-3) 6px;
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:calc(var(--safe-top) + 50px);
+  background:color-mix(in srgb, var(--c-bg) 86%, transparent);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-bottom:.5px solid transparent;transition:border-color var(--d-med) var(--ease);
+}
+.navbar.scrolled{border-bottom-color:var(--c-line)}
+.nav-title{font:var(--t-headline);opacity:0;transform:translateY(4px);transition:opacity var(--d-med) var(--ease),transform var(--d-med) var(--ease);text-align:center;white-space:nowrap}
+.navbar.scrolled .nav-title{opacity:1;transform:none}
+.nav-btn{min-height:var(--touch);min-width:var(--touch);display:inline-flex;align-items:center;gap:2px;color:var(--c-primary);font:var(--t-body);padding:0 var(--s-2);border-radius:var(--r-sm);transition:opacity var(--d-fast)}
+.nav-btn:active{opacity:.45}
+.nav-btn[hidden]{display:none}
+.nav-right{justify-self:end}
+.nav-btn svg{width:22px;height:22px}
+
+.view{padding:0 var(--gutter) calc(var(--tabbar-h) + var(--safe-bottom) + 110px)}
+.view[hidden]{display:none}
+.large-title{font:var(--t-large-title);letter-spacing:-.01em;margin:2px 0 var(--s-3)}
+.subtitle{font:var(--t-callout);color:var(--c-ink-2);margin:calc(-1 * var(--s-2)) 0 var(--s-3)}
+.centered{text-align:center}
+
+/* Progress */
+.progress{display:flex;gap:6px;margin:var(--s-2) 0 var(--s-3)}
+.progress span{flex:1;height:4px;border-radius:var(--r-pill);background:var(--c-line);overflow:hidden;position:relative}
+.progress span::after{content:"";position:absolute;inset:0;background:var(--c-primary);transform:scaleX(0);transform-origin:left;transition:transform var(--d-slow) var(--ease)}
+.progress span.done::after{transform:scaleX(1)}
+.step-label{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--c-primary)}
+
+/* Step transition */
+.stage{position:relative}
+.step-enter{animation:stepIn var(--d-slow) var(--ease) both}
+.step-back{animation:stepBack var(--d-slow) var(--ease) both}
+@keyframes stepIn{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+@keyframes stepBack{from{opacity:0;transform:translateX(-28px)}to{opacity:1;transform:none}}
+
+/* Section + cards */
+.section-h{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--c-ink-2);margin:var(--s-4) var(--s-1) var(--s-2)}
+.card{background:var(--c-surface);border-radius:var(--r-lg);box-shadow:var(--elev-1);border:1px solid var(--c-line);overflow:hidden}
+.card + .card{margin-top:10px}
+.card-pad{padding:14px}
+.card h3{font:var(--t-headline);margin-bottom:var(--s-1)}
+.card p,.card li{font:var(--t-callout);color:var(--c-ink-2)}
+.card ul{padding-left:1.1em}
+.card li+li{margin-top:var(--s-1)}
+.card .q{font:var(--t-headline);color:var(--c-ink);margin-bottom:var(--s-1)}
+.card .hint{font:var(--t-footnote);color:var(--c-ink-2);margin-bottom:var(--s-3)}
+
+/* Segmented choice (radio) */
+.choices{display:grid;gap:6px}
+.choices.two{grid-template-columns:1fr 1fr}
+.choice{
+  min-height:var(--touch);padding:10px var(--s-4);border-radius:var(--r-md);
+  background:var(--c-surface-2);border:1.5px solid transparent;text-align:left;
+  font:var(--t-callout);font-weight:500;display:flex;align-items:center;gap:var(--s-3);
+  transition:background var(--d-fast) var(--ease),border-color var(--d-fast) var(--ease),transform var(--d-fast) var(--ease);
+}
+.choices.two .choice{justify-content:center;text-align:center}
+.choice:active{transform:scale(.97)}
+.choice[aria-checked="true"]{background:var(--c-primary-soft);border-color:var(--c-primary);color:var(--c-ink)}
+.choice .dot{width:20px;height:20px;border-radius:50%;border:2px solid var(--c-ink-2);flex:none;position:relative;transition:border-color var(--d-fast)}
+.choice[aria-checked="true"] .dot{border-color:var(--c-primary)}
+.choice[aria-checked="true"] .dot::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--c-primary);animation:pop var(--d-med) var(--ease-spring)}
+.choices.two .choice .dot{display:none}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+
+/* Checklist rows (iOS grouped list) */
+.list{background:var(--c-surface);border-radius:var(--r-lg);border:1px solid var(--c-line);box-shadow:var(--elev-1);overflow:hidden}
+.row{
+  width:100%;min-height:48px;display:flex;align-items:center;gap:var(--s-3);
+  padding:10px var(--s-4);text-align:left;position:relative;transition:background var(--d-fast);
+}
+.row + .row::before{content:"";position:absolute;top:0;left:58px;right:0;height:.5px;background:var(--c-line)}
+.row:active{background:var(--c-surface-2)}
+.row .txt{flex:1;min-width:0}
+.row .t1{font:var(--t-callout);font-weight:500;color:var(--c-ink)}
+.row .t2{font:var(--t-footnote);color:var(--c-ink-2);margin-top:2px}
+.box{width:24px;height:24px;border-radius:7px;border:2px solid var(--c-ink-2);flex:none;display:grid;place-items:center;transition:background var(--d-fast),border-color var(--d-fast)}
+.box svg{width:15px;height:15px;stroke:var(--c-primary-ink);stroke-width:3;fill:none;stroke-dasharray:20;stroke-dashoffset:20;transition:stroke-dashoffset var(--d-med) var(--ease)}
+.row[aria-checked="true"] .box{background:var(--c-primary);border-color:var(--c-primary)}
+.row[aria-checked="true"] .box svg{stroke-dashoffset:0}
+.row.locked{cursor:default}
+.tag{font:var(--t-caption);padding:3px 8px;border-radius:var(--r-pill);background:var(--c-surface-2);color:var(--c-ink-2);white-space:nowrap}
+.tag.key{background:var(--c-inc-bg);color:var(--c-inc)}
+
+/* Info button */
+.info{min-width:var(--touch);min-height:var(--touch);display:grid;place-items:center;color:var(--c-primary);border-radius:50%;margin:-8px -10px -8px 0}
+.info svg{width:22px;height:22px}
+
+/* Result banner */
+.result{border-radius:var(--r-lg);padding:var(--s-4);border:1px solid transparent;animation:rise var(--d-slow) var(--ease) both}
+.result .eyebrow{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps)}
+.result h2{font:var(--t-title);margin:2px 0 var(--s-1)}
+.result p{font:var(--t-callout)}
+.result.low{background:var(--c-low-bg);color:var(--c-low);border-color:color-mix(in srgb,var(--c-low) 25%,transparent)}
+.result.inc{background:var(--c-inc-bg);color:var(--c-inc);border-color:color-mix(in srgb,var(--c-inc) 25%,transparent)}
+.result.focus{background:var(--c-focus-bg);color:var(--c-focus);border-color:color-mix(in srgb,var(--c-focus) 25%,transparent)}
+.result.neutral{background:var(--c-primary-soft);color:var(--c-primary)}
+.result p,.result li{color:var(--c-ink)}
+@keyframes rise{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}
+
+.factor-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--s-3)}
+.factor-chips span{font:var(--t-footnote);font-weight:500;padding:5px 10px;border-radius:var(--r-pill);background:var(--c-surface);color:var(--c-ink);border:1px solid var(--c-line)}
+
+/* Recommendation card */
+.rec{display:flex;gap:var(--s-3);align-items:flex-start}
+.rec .ic{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:var(--c-primary-soft);color:var(--c-primary);flex:none}
+.rec .ic svg{width:20px;height:20px}
+.rec .level{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--c-primary);margin-bottom:2px}
+.rec .level.warn{color:var(--c-inc)}
+
+/* Duration hero */
+.duration{display:flex;align-items:center;gap:var(--s-3);margin:var(--s-1) 0 var(--s-3)}
+.duration .num{font:700 44px/1 var(--font-display);letter-spacing:-.02em;color:var(--c-ink)}
+.duration .unit{font:var(--t-headline);color:var(--c-ink-2)}
+
+/* Date inputs */
+.field{display:flex;align-items:center;justify-content:space-between;gap:var(--s-3);min-height:52px;padding:var(--s-2) var(--s-4);position:relative}
+.field + .field::before{content:"";position:absolute;top:0;left:var(--s-4);right:0;height:.5px;background:var(--c-line)}
+.field label{font:var(--t-callout);font-weight:500}
+.field label small{display:block;font:var(--t-footnote);color:var(--c-ink-2);font-weight:400}
+.field input[type=date]{min-height:36px;padding:4px 10px;border-radius:8px;border:0;background:var(--c-surface-2);color:var(--c-primary);font:var(--t-callout);font-weight:500}
+.calc-out{padding:var(--s-4);background:var(--c-primary-soft);display:grid;gap:var(--s-2)}
+.calc-out div{display:flex;justify-content:space-between;font:var(--t-callout)}
+.calc-out b{font-weight:600}
+
+/* Buttons */
+.cta-bar{
+  position:fixed;left:0;right:0;bottom:calc(var(--tabbar-h) + var(--safe-bottom));z-index:15;
+  padding:var(--s-3) var(--gutter);max-width:500px;margin:0 auto;
+  background:linear-gradient(to top,var(--c-bg) 70%,color-mix(in srgb,var(--c-bg) 0%,transparent));
+}
+.cta-bar[hidden]{display:none}
+.btn{width:100%;min-height:52px;border-radius:var(--r-md);font:var(--t-headline);display:flex;align-items:center;justify-content:center;gap:var(--s-2);transition:transform var(--d-fast) var(--ease),opacity var(--d-med),background var(--d-med)}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--c-primary);color:var(--c-primary-ink)}
+.btn-primary:disabled{background:var(--c-line);color:var(--c-ink-2);cursor:not-allowed;transform:none}
+.btn-secondary{background:var(--c-primary-soft);color:var(--c-primary)}
+.btn-row{display:grid;gap:var(--s-2);margin-top:var(--s-5)}
+
+/* Notices */
+.note{display:flex;gap:var(--s-3);padding:var(--s-3) var(--s-4);border-radius:var(--r-md);background:var(--c-surface-2);font:var(--t-footnote);color:var(--c-ink-2);margin-top:var(--s-3)}
+.note svg{width:18px;height:18px;flex:none;color:var(--c-primary);margin-top:1px}
+.note b{color:var(--c-ink)}
+
+/* Tab bar */
+.tabbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:30;max-width:500px;margin:0 auto;
+  display:grid;grid-template-columns:repeat(3,1fr);
+  padding-bottom:var(--safe-bottom);
+  background:color-mix(in srgb,var(--c-surface) 88%,transparent);
+  -webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);
+  border-top:.5px solid var(--c-line);
+}
+.tab{height:var(--tabbar-h);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;color:var(--c-ink-2);font:500 11px/13px var(--font)}
+.tab svg{width:26px;height:26px;transition:transform var(--d-med) var(--ease-spring)}
+.tab[aria-selected="true"]{color:var(--c-primary)}
+.tab[aria-selected="true"] svg{transform:scale(1.06)}
+.tab:active svg{transform:scale(.9)}
+
+/* Sheet (definitions) */
+.scrim{position:fixed;inset:0;background:var(--c-overlay);z-index:40;opacity:0;pointer-events:none;transition:opacity var(--d-med) var(--ease)}
+.scrim.open{opacity:1;pointer-events:auto}
+.sheet{
+  position:fixed;left:0;right:0;bottom:0;z-index:41;max-width:500px;margin:0 auto;
+  background:var(--c-surface);border-radius:var(--r-lg) var(--r-lg) 0 0;
+  padding:var(--s-2) var(--gutter) calc(var(--s-6) + var(--safe-bottom));
+  transform:translateY(105%);transition:transform var(--d-slow) var(--ease);box-shadow:var(--elev-2);
+  max-height:80vh;overflow:auto;
+}
+.sheet.open{transform:none}
+.grabber{width:36px;height:5px;border-radius:3px;background:var(--c-line);margin:0 auto var(--s-4)}
+.sheet h2{font:var(--t-title);margin-bottom:var(--s-2)}
+.sheet p{font:var(--t-callout);color:var(--c-ink-2)}
+.sheet .btn{margin-top:var(--s-5)}
+
+/* Glossary & About */
+.search{width:100%;min-height:40px;border-radius:var(--r-sm);border:0;background:var(--c-surface-2);padding:8px 12px 8px 36px;font:var(--t-body);margin-bottom:var(--s-4);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234F5F64' stroke-width='2.2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='m20 20-3.5-3.5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-size:18px;background-position:10px center}
+.search::placeholder{color:var(--c-ink-2)}
+details.term{border-top:.5px solid var(--c-line)}
+details.term:first-child{border-top:0}
+details.term summary{list-style:none;min-height:52px;display:flex;align-items:center;justify-content:space-between;padding:var(--s-3) var(--s-4);font:var(--t-callout);font-weight:600;cursor:pointer}
+details.term summary::-webkit-details-marker{display:none}
+details.term summary > svg{width:16px;height:16px;color:var(--c-ink-2);transition:transform var(--d-med) var(--ease)}
+details.term[open] summary > svg{transform:rotate(90deg)}
+details.term .def{padding:0 var(--s-4) var(--s-4);font:var(--t-callout);color:var(--c-ink-2);animation:rise var(--d-med) var(--ease)}
+.ref{font:var(--t-callout);color:var(--c-ink)}
+.ref i{font-style:italic}
+.meta{font:var(--t-footnote);color:var(--c-ink-2);margin-top:var(--s-2)}
+
+/* Compact answer layouts */
+.choices.three{grid-template-columns:repeat(3,1fr)}
+.choices.grid2{grid-template-columns:1fr 1fr}
+.choices.three .choice,.choices.grid2 .choice{justify-content:center;text-align:center;padding:8px 6px;font-size:15px;line-height:19px}
+.choices.three .choice .dot,.choices.grid2 .choice .dot{display:none}
+.choices.stack .choice{flex-direction:column;gap:3px;min-height:60px}
+/* Static advice rows (icon + title + one line) */
+.adv{display:flex;gap:var(--s-3);align-items:flex-start;padding:12px var(--s-4);position:relative}
+.adv + .adv::before{content:"";position:absolute;top:0;left:58px;right:0;height:.5px;background:var(--c-line)}
+.adv b{display:block;font:var(--t-headline);font-size:16px;color:var(--c-ink)}
+.adv b.warn{color:var(--c-inc)}
+.adv span.d{display:block;font:var(--t-footnote);color:var(--c-ink-2);margin-top:2px}
+/* Collapsible "keep in mind" */
+details.kim summary{list-style:none;min-height:48px;display:flex;align-items:center;gap:var(--s-3);padding:6px var(--s-4);font:var(--t-callout);font-weight:600;cursor:pointer}
+details.kim summary::-webkit-details-marker{display:none}
+details.kim summary > svg{width:16px;height:16px;margin-left:auto;color:var(--c-ink-2);transition:transform var(--d-med) var(--ease)}
+details.kim[open] summary > svg{transform:rotate(90deg)}
+details.kim ul{padding:0 var(--s-4) var(--s-3) 40px;font:var(--t-footnote);color:var(--c-ink-2)}
+details.kim li+li{margin-top:4px}
+
+/* Icon tile */
+.tile{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:none;background:var(--tile,var(--i-teal));color:#fff}
+.tile svg{width:18px;height:18px}
+.tile.lg{width:40px;height:40px;border-radius:11px}
+.tile.lg svg{width:23px;height:23px}
+.q-head{display:flex;align-items:center;gap:var(--s-3);margin-bottom:var(--s-2)}
+.q-head .q{flex:1;margin:0}
+.q-head + .hint{margin-top:calc(-1 * var(--s-2));padding-left:42px}
+.choice .gl{width:20px;height:20px;flex:none}
+.choice .gl svg{width:20px;height:20px}
+.choices.two .choice{gap:6px}
+.choice[aria-checked="true"] .gl{color:var(--c-primary)}
+.row .mark{width:24px;height:24px;border-radius:50%;border:2px solid var(--c-line);flex:none;display:grid;place-items:center;transition:background var(--d-fast),border-color var(--d-fast),transform var(--d-med) var(--ease-spring)}
+.row .mark svg{width:14px;height:14px;stroke:var(--c-primary-ink);stroke-width:3;fill:none;stroke-dasharray:20;stroke-dashoffset:20;transition:stroke-dashoffset var(--d-med) var(--ease)}
+.row[aria-checked="true"] .mark{background:var(--c-primary);border-color:var(--c-primary);transform:scale(1.05)}
+.row[aria-checked="true"] .mark svg{stroke-dashoffset:0}
+.hero{display:flex;align-items:center;gap:var(--s-3);padding:var(--s-4);border-radius:var(--r-lg);background:var(--c-primary-soft);margin-bottom:var(--s-4)}
+.hero .tile.lg{width:52px;height:52px;border-radius:13px}
+.hero .tile.lg svg{width:30px;height:30px}
+.hero b{display:block;font:var(--t-headline)}
+.hero div span{font:var(--t-footnote);color:var(--c-ink-2)}
+.badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.badges i{font:600 12px/16px var(--font);font-style:normal;color:var(--c-primary);background:var(--c-surface);border:1px solid var(--c-line);border-radius:var(--r-pill);padding:3px 8px 3px 6px;display:inline-flex;align-items:center;gap:4px}
+.badges svg{width:14px;height:14px}
+.card-h{display:flex;align-items:center;gap:var(--s-3);margin-bottom:var(--s-2)}
+.card-h h3{margin:0}
+details.term summary .tile{margin-right:var(--s-3)}
+details.term summary .lbl{flex:1}
+details.term .def{padding-left:58px}
+
+/* Desktop preview: show the app inside an iPhone 13 Pro Max-sized frame */
+@media (hover:hover) and (pointer:fine){
+  html,body{height:100%;overflow:hidden}
+  body{background:#DDE5E2;display:grid;place-items:center}
+  .app{
+    --safe-top:47px; --safe-bottom:34px;
+    width:428px;height:926px;max-width:none;min-height:0;margin:0;
+    border-radius:56px;overflow:hidden;background:var(--c-bg);
+    box-shadow:0 0 0 11px #1A2124,0 0 0 13px #3A4448,0 30px 60px -20px rgba(0,0,0,.45);
+    transform:translateZ(0); /* keeps the bottom bar and sheets inside the frame */
+    zoom:var(--fit,1);       /* shrinks the whole phone to fit any window */
+  }
+  .app .statusbar{display:flex}
+  .app::before{content:"";position:absolute;top:11px;left:50%;width:126px;height:37px;margin-left:-63px;border-radius:20px;background:#000;z-index:60;pointer-events:none}
+  .scroller{height:100%;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+  .scroller::-webkit-scrollbar{display:none}
+  .cta-bar,.tabbar,.sheet{position:absolute}
+  .scrim,.toast{position:absolute}
+}
+@media (hover:hover) and (pointer:fine) and (prefers-color-scheme: dark){ body{background:#0A0E10} }
+
+/* Pretend iPhone status bar — only shown in the computer preview frame */
+.statusbar{display:none;position:absolute;top:0;left:0;right:0;height:47px;z-index:55;align-items:center;justify-content:space-between;padding:6px 34px 0 44px;font:600 16px/1 var(--font);color:var(--c-ink);pointer-events:none}
+.statusbar .sb-r{display:flex;gap:6px;align-items:center}
+.statusbar svg{height:12px;width:auto;fill:currentColor}
+
+/* Toast */
+.toast{position:fixed;left:50%;bottom:calc(var(--tabbar-h) + var(--safe-bottom) + 90px);z-index:50;transform:translate(-50%,20px);opacity:0;
+  background:var(--c-ink);color:var(--c-bg);font:var(--t-footnote);font-weight:600;padding:10px 16px;border-radius:var(--r-pill);transition:opacity var(--d-med),transform var(--d-med) var(--ease-spring);pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="statusbar" aria-hidden="true"><span>9:41</span><span class="sb-r">
+    <svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+    <svg viewBox="0 0 16 12"><path d="M8 2.2c2.4 0 4.6.9 6.2 2.5l1.2-1.2A10.4 10.4 0 0 0 8 .5 10.4 10.4 0 0 0 .6 3.5l1.2 1.2A8.7 8.7 0 0 1 8 2.2zm0 3.4c1.5 0 2.8.6 3.8 1.5L13 5.9A7 7 0 0 0 8 3.9a7 7 0 0 0-5 2l1.2 1.2c1-.9 2.3-1.5 3.8-1.5zm0 3.4c.6 0 1.1.2 1.5.6L8 11.1 6.5 9.6c.4-.4.9-.6 1.5-.6z"/></svg>
+    <svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3" fill="none" stroke="currentColor" opacity=".4"/><rect x="2" y="2" width="20" height="8" rx="1.8"/><rect x="24.5" y="4" width="1.8" height="4" rx=".9" opacity=".4"/></svg></span></div>
+
+  <div class="scroller" id="scroller">
+  <!-- ================= NAV BAR ================= -->
+  <header class="navbar" id="navbar">
+    <div><button class="nav-btn" id="backBtn" hidden aria-label="Back to previous step">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg><span>Back</span></button></div>
+    <div class="nav-title" id="navTitle">SAB Guide</div>
+    <div class="nav-right"><button class="nav-btn" id="resetBtn" hidden>Start over</button></div>
+  </header>
+
+  <!-- ================= ASSESS ================= -->
+  <main class="view" id="view-assess" aria-live="polite">
+    <div id="stage" class="stage"></div>
+  </main>
+
+  <!-- ================= GLOSSARY ================= -->
+  <main class="view" id="view-glossary" hidden>
+    <h1 class="large-title centered">Definitions</h1>
+    <p class="subtitle centered">Key terms used in the 2026 statement, in plain words.</p>
+    <label class="sr-only" for="q">Search definitions</label>
+    <input class="search" id="q" type="search" placeholder="Search" autocomplete="off">
+    <div class="list" id="glossList"></div>
+  </main>
+
+  <!-- ================= ABOUT ================= -->
+  <main class="view" id="view-about" hidden>
+    <h1 class="large-title centered">About</h1>
+    <p class="subtitle centered">What this app is based on, and what it is not.</p>
+
+    <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-green)" data-icon="checkShield"></span><h3>What the app covers</h3></div>
+      <ul>
+        <li><b>Adults only.</b> Children have separate guidance in the statement.</li>
+        <li>Risk stratification: low-risk vs increased-risk SAB (Statement 1, Figure 1).</li>
+        <li>Follow-up blood cultures (Statement 2), TTE (3), TEE (4), whole-body imaging (5).</li>
+        <li>Treatment duration (Statements 6 and 7) and the start-date rule.</li>
+      </ul>
+    </div>
+
+    <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-slate)" data-icon="xmark"></span><h3>What it does not cover</h3></div>
+      <ul>
+        <li>Which antibiotic to use (MRSA vs MSSA) — to be addressed in future IDSA/ESCMID publications.</li>
+        <li>Exact duration for each specific focus (e.g., endocarditis, osteomyelitis).</li>
+        <li>Pediatric or neonatal patients.</li>
+      </ul>
+    </div>
+
+    <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-amber)" data-icon="alert"></span><h3>Clinical educational tool</h3></div>
+      <p>For use by clinicians (physicians, advanced practice providers, pharmacists) as an educational aid that summarizes the 2026 IDSA/ESCMID consensus statements. It does not replace clinical judgment or infectious diseases consultation, which the panel strongly encourages. Risk is dynamic — reassess as the patient's course evolves. The listed risk factors are not exhaustive.</p>
+      <p class="meta">The guideline content is the copyrighted property of IDSA. Use of the guideline within software requires permission from IDSA.</p>
+    </div>
+
+    <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-green)" data-icon="checkShield"></span><h3>Privacy</h3></div>
+      <ul>
+        <li><b>No protected health information (PHI).</b> The app never asks for names, record numbers or other patient identifiers — please don't type any in.</li>
+        <li>Answers stay on this device, are not saved, and clear when you tap Start over or close the app.</li>
+        <li>Nothing is sent over the internet — no accounts, tracking or analytics.</li>
+        <li>Designed for HIPAA-conscious use.</li>
+      </ul>
+    </div>
+    <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-teal)" data-icon="doc"></span><h3>References</h3></div>
+      <p class="ref">Liu C, Chambers HF, Kern WV, Vandenesch F, et al. <i>2026 Consensus Statements by the Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) on Staphylococcus aureus Bacteremia: Risk Stratification, Diagnostic Evaluation, and Management of Adults and Children.</i> Executive Summary, Consensus Statements 1–7.</p>
+      <p class="meta">Developed jointly by IDSA and ESCMID, with PIDS, ESPID, SHEA, SIDP and ASHP representation. Correspondence: practiceguidelines@idsociety.org</p>
+    </div>
+    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 1.9 · September 2026</p>
+  </main>
+
+  </div><!-- /scroller -->
+
+  <!-- CTA -->
+  <div class="cta-bar" id="ctaBar"><button class="btn btn-primary" id="nextBtn">Continue</button></div>
+
+  <!-- ================= TAB BAR ================= -->
+  <nav class="tabbar" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" aria-selected="true" data-tab="assess">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3.5" width="14" height="18" rx="3"/><path d="M9 3.5h6v2.5H9z"/><path d="m8.5 12 2 2 4-4"/><path d="M9 17.5h6"/></svg>Assess</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="glossary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/><path d="M8.5 8h7M8.5 11.5h5"/></svg>Definitions</button>
+    <button class="tab" role="tab" aria-selected="false" data-tab="about">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".6" fill="currentColor"/></svg>About</button>
+  </nav>
+
+  <!-- Definition sheet -->
+  <div class="scrim" id="scrim"></div>
+  <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+    <div class="grabber"></div>
+    <h2 id="sheetTitle"></h2>
+    <p id="sheetBody"></p>
+    <button class="btn btn-secondary" id="sheetClose">Done</button>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+</div>
+
+<!-- =========================================================
+     CLINICAL LOGIC (pure functions — no screen code here)
+     Source: 2026 IDSA/ESCMID SAB Consensus Statements 1–7
+     ========================================================= -->
+<script id="sab-logic">
+const SAB = (() => {
+  const OTHER_FACTORS = [
+    { id:'valve',    label:'Predisposing heart valve condition', sub:'Prior IE, prosthetic/repaired valve, CHD, >mild valve disease, HOCM', te:true },
+    { id:'idu',      label:'Injection drug use', te:'consider' },
+    { id:'graft',    label:'Endovascular graft' },
+    { id:'prior90',  label:'SAB in the prior 90 days' },
+    { id:'signs',    label:'Signs of a deep or metastatic focus' },
+    { id:'embolic',  label:'Embolic events', te:true },
+    { id:'multi',    label:'>1 non-contiguous focus', te:true },
+    { id:'unknown',  label:'Unknown focus of infection' },
+  ];
+  const LONGER = [
+    { id:'retained', label:'Intracardiac device left in place' },
+    { id:'newgraft', label:'Recently placed endovascular graft' },
+    { id:'dvt',      label:'Clot (DVT) at a central line site' },
+  ];
+
+  // Returns everything the screens need, from the answers alone.
+  function assess(s){
+    const out = { eligible:null, keyFactors:[], otherFactors:[], risk:null, provisional:false,
+                  tee:null, wbi:false, classification:'pending', duration:null };
+
+    // Step 0 — scope
+    if (s.adult === false) { out.eligible = false; out.reason = 'child'; return out; }
+    if (s.saConfirmed === false) { out.eligible = false; out.reason = 'notsa'; return out; }
+    out.eligible = (s.adult === true && s.saConfirmed === true) ? true : null;
+
+    const other = new Set(s.other || []);
+    const fubcPos = s.fubc48 === 'pos';
+
+    // Statement 1 — key risk factors
+    if (s.community === true) out.keyFactors.push('Community-onset');
+    if (fubcPos)              out.keyFactors.push('Positive culture ≥48 h after first');
+    if (s.device === true)    out.keyFactors.push('Intracardiac device');
+    OTHER_FACTORS.forEach(f => { if (other.has(f.id)) out.otherFactors.push(f.label); });
+
+    const tteShowsIE = s.tte === 'ie';
+    const anyFactor = out.keyFactors.length + out.otherFactors.length > 0 || tteShowsIE;
+    const answered = s.community !== null && s.community !== undefined &&
+                     s.device !== null && s.device !== undefined &&
+                     s.fubc48 && s.tte && s.otherDone === true;
+    if (answered) out.risk = anyFactor ? 'increased' : 'low';
+    // Low risk can only be confirmed once follow-up cultures and TTE are back
+    out.provisional = out.risk === 'low' && (s.fubc48 === 'pending' || s.tte === 'pending');
+
+    // Statement 3 & 4 — echocardiography
+    const strongTEE = s.device === true || other.has('valve') || fubcPos || other.has('embolic') || other.has('multi');
+    const considerTEE = s.community === true || other.has('idu');
+    if (s.tte === 'pending')      out.tee = { level:'obtain', text:'Obtain a TTE — recommended for all adults with SAB.' };
+    else if (tteShowsIE)          out.tee = { level:'found', text:'TTE shows endocarditis — this is a deep-seated focus.' };
+    else if (strongTEE)           out.tee = { level:'suggested', text:'TEE suggested, even if the TTE was good quality.' };
+    else if (considerTEE)         out.tee = { level:'consider', text:'Consider TEE. Weigh TTE quality, any other endocarditis features, how the patient is responding, and whether TEE would change management.' };
+    else if (s.tte === 'neg-limited') out.tee = { level:'judgment', text:'No endocarditis risk features, but the TTE was limited. The "TEE may be unnecessary" statement applies only to a good-quality TTE — use judgment and discuss with ID.' };
+    else if (s.tte === 'neg-good')    out.tee = { level:'unnecessary', text:'TEE may be unnecessary: good-quality negative TTE and no endocarditis risk features.' };
+
+    // Statement 5 — whole-body imaging
+    out.wbi = out.risk === 'increased' && other.has('unknown') && s.focus !== 'yes' && !tteShowsIE;
+
+    // Classification (Figure 1)
+    if (tteShowsIE || (out.risk === 'increased' && s.focus === 'yes')) out.classification = 'focus';
+    else if (out.risk === 'low' && !out.provisional) out.classification = 'nofocus';
+    else if (out.risk === 'increased' && s.focus === 'no') out.classification = 'nofocus';
+    else out.classification = 'pending';
+
+    // Statements 6 & 7 — duration
+    if (out.classification === 'focus') {
+      out.duration = { kind:'focus', days:28, label:'4+', unit:'weeks',
+        text:'Source control based on the focus, plus at least 4 weeks of antibiotics guided by the focus.' };
+    } else if (out.classification === 'nofocus' && out.risk === 'low') {
+      out.duration = { kind:'low', days:14, label:'14', unit:'days',
+        text:'14 days — not shorter, not longer (Statement 6).', flags:[] };
+    } else if (out.classification === 'nofocus' && out.risk === 'increased') {
+      if (s.resolved === false) {
+        out.duration = { kind:'notready', days:null, label:'—', unit:'',
+          text:'Signs of infection have not resolved. Keep evaluating for a deep-seated focus before settling on 14 days.' };
+      } else {
+        const flags = [];
+        if (fubcPos) flags.push('Prolonged bacteremia (≥48 h)');
+        if (s.workupComplete === false) flags.push('Workup incomplete or limited');
+        const longer = new Set(s.longer || []);
+        LONGER.forEach(l => { if (longer.has(l.id)) flags.push(l.label); });
+        out.duration = { kind:'inc', days:14, label:'14', unit:'days', flags,
+          text: flags.length
+            ? '14 days is the baseline, but a longer course guided by the likely focus should be considered. Reassess source control.'
+            : '14 days, provided signs and symptoms have resolved and the tailored workup found no focus (Statement 7).' };
+      }
+    }
+    return out;
+  }
+
+  // Start date = clearance day, unless source control happened later (then that date).
+  function startDate(clearISO, sourceISO){
+    if (!clearISO) return null;
+    if (sourceISO && sourceISO > clearISO) return { date: sourceISO, basis:'source' };
+    return { date: clearISO, basis:'clearance' };
+  }
+  // Day 1 = start date, so a 14-day course ends on start + 13 days.
+  function lastDay(startISO, days){
+    const [y,m,d] = startISO.split('-').map(Number);
+    const dt = new Date(Date.UTC(y, m-1, d + days - 1));
+    return dt.toISOString().slice(0,10);
+  }
+  return { assess, startDate, lastDay, OTHER_FACTORS, LONGER };
+})();
+if (typeof module !== 'undefined') module.exports = SAB;
+</script>
+
+<!-- =========================================================
+     SCREENS & INTERACTION
+     ========================================================= -->
+<script>
+(() => {
+const $ = (sel, el=document) => el.querySelector(sel);
+const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+const P = d => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  check:'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  yes:P('<circle cx="12" cy="12" r="9"/><path d="m8 12.5 2.8 2.8L16.5 9.5"/>'),
+  no:P('<circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/>'),
+  info:P('<circle cx="12" cy="12" r="9"/><path d="M12 11v6"/><circle cx="12" cy="7.6" r=".7" fill="currentColor"/>'),
+  person:P('<circle cx="12" cy="7.5" r="3.5"/><path d="M5 20a7 7 0 0 1 14 0"/>'),
+  drop:P('<path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/><circle cx="10.5" cy="14" r="1.2"/><circle cx="13.5" cy="15.5" r="1.2"/><circle cx="13" cy="12" r="1.2"/>'),
+  steth:P('<path d="M6 3v5a4 4 0 0 0 8 0V3"/><path d="M10 12v2.5a5 5 0 0 0 10 0V13"/><circle cx="20" cy="11" r="2"/>'),
+  tube:P('<path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4A2 2 0 0 0 19 18l-5-9V3"/><path d="M7.5 15h9"/>'),
+  heart:P('<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M8 12h2l1-2 2 4 1-2h2"/>'),
+  line:P('<path d="M4 19c3.5 0 3.5-6 8-6s4.5 6 8 6"/><path d="M12 13V6M9 4h6"/>'),
+  people:P('<circle cx="9" cy="8" r="3.2"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2A4.5 4.5 0 0 1 21 18.5"/>'),
+  house:P('<path d="m4 11 8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/>'),
+  device:P('<rect x="5" y="9" width="14" height="11" rx="3.5"/><path d="M9 9V7a3 3 0 0 1 6 0v2"/><path d="M8 14.5h2l1-2 1.5 4 1-2H16"/>'),
+  clock:P('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),
+  syringe:P('<path d="m18 3 3 3M19.5 4.5l-3.5 3.5"/><path d="m14 6 4 4"/><path d="M16 8 7.5 16.5H5v-2.5L13.5 5.5"/><path d="M5 19l-2 2"/><path d="m9 12 2 2"/>'),
+  link:P('<path d="M10 14a4 4 0 0 0 5.7 0l3-3A4 4 0 0 0 13 5.3l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 0 0 11 18.7l1-1"/>'),
+  repeat:P('<path d="M4 12a8 8 0 0 1 14-5.3L20 9"/><path d="M20 4v5h-5"/><path d="M20 12a8 8 0 0 1-14 5.3L4 15"/><path d="M4 20v-5h5"/>'),
+  alert:P('<path d="M12 3.5 21 19H3z"/><path d="M12 10v4"/><circle cx="12" cy="16.6" r=".6" fill="currentColor"/>'),
+  scatter:P('<circle cx="6.5" cy="6.5" r="2"/><circle cx="17.5" cy="8" r="1.5"/><circle cx="8.5" cy="17" r="1.5"/><circle cx="17.5" cy="17.5" r="2"/><circle cx="12" cy="12" r="1.2"/>'),
+  grid:P('<circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><circle cx="17" cy="17" r="3"/>'),
+  question:P('<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .8-1 1.5v.5"/><circle cx="12" cy="16.8" r=".6" fill="currentColor"/>'),
+  clot:P('<path d="M3 7.5h18M3 16.5h18"/><ellipse cx="12" cy="12" rx="4" ry="2.6"/>'),
+  target:P('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/>'),
+  hourglass:P('<path d="M7 3h10M7 21h10"/><path d="M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9s8 4 8 9"/>'),
+  doc:P('<path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h6"/>'),
+  checkShield:P('<path d="M12 3 20 6v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>'),
+  xmark:P('<circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/>'),
+  scan:P('<path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/><circle cx="12" cy="12" r="3.5"/>'),
+  search:P('<circle cx="11" cy="11" r="6.5"/><path d="m20 20-4-4"/>'),
+  calendar:P('<rect x="4" y="5" width="16" height="15" rx="2.5"/><path d="M4 10h16M8 3v4M16 3v4"/>'),
+  pills:P('<path d="M10.5 20.5a4.95 4.95 0 0 1-7-7l10-10a4.95 4.95 0 0 1 7 7z"/><path d="m8.5 8.5 7 7"/>'),
+  book:P('<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5z"/><path d="M4 20.5A2.5 2.5 0 0 0 6.5 23H20v-5"/>'),
+  chev:P('<path d="m9 6 6 6-6 6"/>'),
+};
+const tile = (icon, color='teal', lg=false) => `<span class="tile ${lg?'lg':''}" style="--tile:var(--i-${color})">${ICON[icon]}</span>`;
+// Icons for each checklist item: [icon, tile color]
+const ROW_ICON = {
+  hx:['steth','teal'], cx:['tube','rose'], tte:['heart','coral'], cvc:['line','blue'], id:['people','indigo'],
+  valve:['heart','coral'], idu:['syringe','rose'], graft:['link','blue'], prior90:['repeat','indigo'],
+  signs:['alert','amber'], embolic:['scatter','coral'], multi:['grid','amber'], unknown:['question','slate'],
+  retained:['device','coral'], newgraft:['link','blue'], dvt:['clot','rose'],
+};
+// Glossary term → icon
+const TERM_ICON = {
+  'Community-onset SAB':['house','teal'],'Hospital-onset SAB':['calendar','blue'],'Follow-up blood cultures':['tube','rose'],
+  'Blood culture set':['tube','rose'],'Blood culture clearance':['yes','green'],'Positive culture ≥48 h':['clock','amber'],
+  'Intracardiac device':['device','coral'],'Predisposing heart valve condition':['heart','coral'],'Endovascular graft':['link','blue'],
+  'Embolic event':['scatter','coral'],'Deep-seated focus':['target','coral'],'Metastatic focus':['grid','amber'],
+  'Low-risk SAB':['checkShield','green'],'Increased-risk SAB':['alert','amber'],'Source control':['scan','indigo'],
+  'Relapse':['repeat','indigo'],'Skip phenomenon':['hourglass','slate'],'TTE / TEE':['heart','teal'],
+  '"Complicated" vs "uncomplicated"':['xmark','slate'],
+};
+
+// Scrolling: the window on a phone, the framed screen on a computer
+const FRAME_MQ = matchMedia('(hover:hover) and (pointer:fine)');
+const scroller = () => FRAME_MQ.matches ? $('#scroller') : null;
+const getY = () => { const s = scroller(); return s ? s.scrollTop : window.scrollY; };
+const setY = y => { const s = scroller(); s ? (s.scrollTop = y) : window.scrollTo(0, y); };
+
+// Short definitions (paraphrased from Table 1 of the statement)
+const DEFS = {
+  'Community-onset SAB':'First positive blood culture drawn before admission or less than 48 hours after admission. Includes patients with recent healthcare contact (dialysis, IV therapy, nursing home).',
+  'Hospital-onset SAB':'First positive blood culture drawn 48 hours or more after admission. Beware: if cultures were delayed, a community infection can be mislabeled as hospital-onset.',
+  'Follow-up blood cultures':'Cultures drawn after the first positive one, to track how long bacteremia lasts and document when it clears. Draw at least 2 sets at 48 hours after the first positive, then 1–2 sets every 24–48 hours until negative.',
+  'Blood culture set':'One aerobic and one anaerobic bottle from a single draw.',
+  'Blood culture clearance':'The day the first negative blood culture was drawn, after which no further cultures grow S. aureus. This day is Day 1 of treatment.',
+  'Positive culture ≥48 h':'A follow-up culture drawn 48 hours or more after the first positive one that still grows S. aureus. The strongest single predictor of a bad outcome; it suggests an uncontrolled source.',
+  'Intracardiac device':'Prosthetic heart valve, permanent pacemaker, implantable defibrillator (ICD) or left ventricular assist device (LVAD).',
+  'Predisposing heart valve condition':'Prior endocarditis, prosthetic valve, prior valve repair, congenital heart disease, more than mild regurgitation or stenosis of any cause, intracardiac electronic device, or hypertrophic obstructive cardiomyopathy (per 2023 Duke-ISCVID criteria).',
+  'Endovascular graft':'A synthetic bypass graft in the vessel wall.',
+  'Embolic event':'Infected material breaking off and lodging elsewhere — e.g., septic lung emboli, stroke, splenic or kidney infarcts, Janeway lesions, splinter hemorrhages.',
+  'Deep-seated focus':'Infection of deep tissue or an organ that is not skin and not an IV line — e.g., endocarditis, osteomyelitis, splenic or psoas abscess, septic thrombophlebitis, device infection.',
+  'Metastatic focus':'A distant infection seeded through the bloodstream from another site.',
+  'Low-risk SAB':'No risk factors and no signs of a deep-seated or metastatic focus after initial evaluation (including follow-up cultures and TTE).',
+  'Increased-risk SAB':'At least one risk factor for deep infection, metastatic spread or relapse.',
+  'Source control':'A procedure that removes or controls a focus that antibiotics alone are unlikely to cure — e.g., removing a central line or device, draining an abscess, valve surgery.',
+  'Relapse':'Return of the same infection because the first one was not fully cured. Most relapses occur within 90 days.',
+  'Skip phenomenon':'A negative follow-up culture followed later by a positive one. The clearance date moves to after the last positive.',
+  'TTE / TEE':'Transthoracic echo (through the chest wall) vs transesophageal echo (probe in the esophagus — more sensitive for valve infection).',
+  '"Complicated" vs "uncomplicated"':'Older labels the panel now discourages because definitions vary and they oversimplify. Replaced by low-risk vs increased-risk.',
+};
+
+// ---------- state ----------
+const fresh = () => ({ step:0, adult:null, saConfirmed:null, init:[], fubc48:null, tte:null,
+  community:null, device:null, other:[], otherDone:false, focus:null, focusSite:null,
+  resolved:null, workupComplete:null, longer:[], clearDate:'', sourceDate:'' });
+let S = fresh();
+let dir = 'fwd';
+
+const STEPS = ['Patient','Initial evaluation','Key risk factors','Other risk factors','Risk & workup','Workup results','Plan'];
+const LAST = STEPS.length - 1;
+// Low-risk patients and TTE-proven endocarditis have no workup results to enter
+const skipResults = () => SAB.assess(S).risk === 'low' || S.tte === 'ie';
+
+// ---------- small builders ----------
+function radio(key, opts, cls=''){
+  return `<div class="choices ${cls}" role="radiogroup">` + opts.map(([v,l,ic]) => {
+    const g = ic || (v===true ? 'yes' : v===false ? 'no' : null);
+    return `<button class="choice" role="radio" aria-checked="${S[key]===v}" data-set="${key}" data-val='${JSON.stringify(v)}'>${g&&cls==='two'?'':'<span class="dot"></span>'}${g?`<span class="gl">${ICON[g]}</span>`:''}<span>${l}</span></button>`;
+  }).join('') + '</div>';
+}
+function checkRow(list, id, t1, t2='', extra=''){
+  const on = S[list].includes(id);
+  const [ic, col] = ROW_ICON[id] || ['check','teal'];
+  return `<button class="row" role="checkbox" aria-checked="${on}" data-toggle="${list}" data-id="${id}">
+    ${tile(ic,col)}<span class="txt"><span class="t1">${t1}</span>${t2?`<span class="t2" style="display:block">${t2}</span>`:''}</span>${extra}<span class="mark">${ICON.check}</span></button>`;
+}
+const qh = (icon, color, text, term) => `<div class="q-head">${tile(icon,color)}<p class="q">${text}</p>${term?infoBtn(term):''}</div>`;
+const infoBtn = term => `<span class="info" role="button" tabindex="0" data-def="${esc(term)}" aria-label="Definition: ${esc(term)}">${ICON.info}</span>`;
+const header = (i, title, sub) => `
+  <div class="progress" aria-hidden="true">${STEPS.map((_,k)=>`<span class="${k<=i?'done':''}"></span>`).join('')}</div>
+  <div class="step-label">Step ${i+1} of ${STEPS.length} · ${STEPS[i]}</div>
+  <h1 class="large-title">${title}</h1>${sub?`<p class="subtitle">${sub}</p>`:''}`;
+const REC_COLOR = {heart:'coral', search:'blue', scan:'indigo', clock:'amber'};
+const rec = (icon, level, title, body, warn) => `<div class="card card-pad"><div class="rec">${tile(icon, REC_COLOR[icon]||'teal', true)}<div>
+  <div class="level ${warn?'warn':''}">${level}</div><h3>${title}</h3><p>${body}</p></div></div></div>`;
+
+// ---------- steps ----------
+const view = {
+  0(){ // Patient / scope
+    const r = SAB.assess(S);
+    let stop = '';
+    if (r.eligible === false) stop = `<div class="result neutral" style="margin-top:var(--s-5)"><div class="eyebrow">Outside this app's scope</div>
+      <h2>${r.reason==='child'?'Adults only':'Needs a positive culture'}</h2>
+      <p>${r.reason==='child'
+        ? 'The 2026 statement gives separate guidance for children and neonates. Please use the pediatric sections and involve pediatric infectious diseases.'
+        : 'This guide applies to patients with at least one blood culture growing S. aureus. S. aureus is rarely a contaminant — a single positive bottle counts.'}</p></div>`;
+    return `<h1 class="large-title centered">Assess</h1>` + header(0,'New patient','Two quick checks before we start.') + `
+      <div class="hero">${tile('drop','teal',true)}<div><b><em class="sp">Staphylococcus Aureus</em> Bacteremia Management (adults)</b><span>Based on the 2026 IDSA/ESCMID consensus statements</span><div class="badges"><i>${ICON.people}Educational tool for clinicians</i><i>${ICON.checkShield}No patient data stored or sent</i></div></div></div>
+      <div class="card card-pad">${qh('person','teal','Is the patient 18 years or older?')}${radio('adult',[[true,'Yes'],[false,'No']],'two')}</div>
+      <div class="card card-pad">${qh('drop','rose','At least one blood culture growing <em class="sp">S. aureus</em>?')}
+        <p class="hint">Either methicillin-susceptible or resistant.</p>${radio('saConfirmed',[[true,'Yes'],[false,'No']],'two')}</div>${stop}`;
+  },
+  1(){ // Initial evaluation
+    return header(1,'Initial evaluation','') + `
+      <div class="list">
+        ${checkRow('init','hx','History and physical exam','Devices, valves, drug use, pain, emboli')}
+        ${checkRow('init','cx','Follow-up blood cultures','≥2 sets at 48 h, then q24–48 h until negative')}
+        ${checkRow('init','tte','Echo (TTE) — all adults')}
+        ${checkRow('init','cvc','Remove central line promptly')}
+        ${checkRow('init','id','ID consult (strongly encouraged)')}
+      </div>
+      <div class="card card-pad" style="margin-top:var(--s-3)">${qh('tube','rose','Culture ≥48 h after first positive','Positive culture ≥48 h')}
+        ${radio('fubc48',[['neg','Negative'],['pos','Positive'],['pending','Pending']],'three')}</div>
+      <div class="card card-pad">${qh('heart','coral','TTE result','TTE / TEE')}
+        ${radio('tte',[['neg-good','Negative, good quality'],['neg-limited','Negative, limited'],['ie','Endocarditis'],['pending','Pending']],'grid2')}</div>`;
+  },
+  2(){ // Key risk factors
+    const fubc = S.fubc48==='pos' ? 'Yes' : S.fubc48==='neg' ? 'No' : 'Pending';
+    return header(2,'Key risk factors','The three strongest predictors of deep infection or relapse.') + `
+      <div class="card card-pad">${qh('house','teal','Community-onset?','Community-onset SAB')}
+        <p class="hint">First positive culture drawn before or &lt;48 h after admission.</p>${radio('community',[[true,'Yes'],[false,'No']],'two')}</div>
+      <div class="card card-pad">${qh('device','coral','Intracardiac device?','Intracardiac device')}
+        <p class="hint">Prosthetic valve, pacemaker, ICD or LVAD.</p>${radio('device',[[true,'Yes'],[false,'No']],'two')}</div>
+      <div class="list" style="margin-top:var(--s-3)"><div class="row locked">${tile('clock','amber')}<span class="txt"><span class="t1">Positive culture ≥48 h after first</span>
+        <span class="t2" style="display:block">Carried over from Step 2</span></span><span class="tag ${S.fubc48==='pos'?'key':''}">${fubc}</span></div></div>`;
+  },
+  3(){ // Other factors
+    const rows = SAB.OTHER_FACTORS.map(f => checkRow('other', f.id, f.label, f.sub||'')).join('');
+    return header(3,'Other risk factors','Select all that apply. Any one = increased risk. Not an exhaustive list.') + `
+      <div class="list">${rows}<button class="row" role="checkbox" aria-checked="${S.otherDone && S.other.length===0}" data-none="1">
+        ${tile('checkShield','green')}<span class="txt"><span class="t1">None of these</span></span><span class="mark">${ICON.check}</span></button></div>`;
+  },
+  4(){ // Risk & workup
+    const r = SAB.assess(S);
+    const chips = [...r.keyFactors, ...r.otherFactors, ...(S.tte==='ie'?['Endocarditis on TTE']:[])];
+    const banner = r.risk === 'low'
+      ? `<div class="result low"><div class="eyebrow">Risk stratification</div><h2>Low-risk SAB${r.provisional?' (provisional)':''}</h2>
+         <p>${r.provisional ? 'Confirm once follow-up cultures and TTE are back.' : 'No risk factors. No workup needed beyond follow-up cultures and TTE.'}</p></div>`
+      : `<div class="result inc"><div class="eyebrow">Risk stratification</div><h2>Increased-risk SAB</h2>
+         <p>Tailor the workup, guided by repeated exams.</p><div class="factor-chips">${chips.map(c=>`<span>${esc(c)}</span>`).join('')}</div></div>`;
+    const TEE_UI = {
+      obtain:['Get a TTE','Recommended for all adults (Statement 3).'],
+      found:['Endocarditis on TTE','Deep-seated focus — go to the plan.',true],
+      suggested:['TEE suggested','Even if the TTE was good quality (Statement 4).',true],
+      consider:['Consider TEE','Weigh TTE quality, other features, response and impact on care.'],
+      judgment:['TEE: use judgment','Limited TTE without risk features is not directly addressed. Discuss with ID.',true],
+      unnecessary:['TEE may be unnecessary','Good-quality negative TTE, no endocarditis features.'],
+    };
+    const adv = (ic,col,t,d,warn) => `<div class="adv">${tile(ic,col)}<div><b class="${warn?'warn':''}">${t}</b><span class="d">${d}</span></div></div>`;
+    let rows = '';
+    if (r.tee){ const [t,d,w] = TEE_UI[r.tee.level]; rows += adv('heart','coral',t,d,w); }
+    if (r.risk === 'increased' && S.tte !== 'ie') {
+      rows += adv('search','blue','Symptom-directed imaging','E.g., MRI spine for back pain, CT chest/abdomen, venous duplex.');
+      if (r.wbi) rows += adv('scan','indigo','Whole-body imaging','Unknown focus: FDG-PET/CT, or combined imaging of likely sites (Statement 5).');
+      if (S.fubc48==='pos') rows += adv('clock','amber','Reassess source control','Culture positive ≥48 h. Repeat cultures daily until negative 2 days in a row.',true);
+    }
+    return header(4,'Risk & workup','') + banner + `<div class="section-h">Next steps</div><div class="list">${rows}</div>`;
+  },
+  5(){ // Workup results (increased risk only)
+    let html = header(5,'Workup results','') + `
+      <div class="card card-pad">${qh('target','coral','Deep-seated or metastatic focus?','Deep-seated focus')}
+        ${radio('focus',[['yes','Found','target'],['no','Not found','xmark'],['ongoing','Still looking','hourglass']],'three stack')}</div>`;
+    if (S.focus === 'no') html += `
+      <div class="card card-pad">${qh('yes','green','Signs and symptoms resolved?')}${radio('resolved',[[true,'Yes'],[false,'No']],'two')}</div>
+      <div class="card card-pad">${qh('scan','indigo','Workup complete and good quality?')}${radio('workupComplete',[[true,'Yes'],[false,'No']],'two')}</div>
+      <div class="section-h">Any of these? (optional)</div>
+      <div class="list">${SAB.LONGER.map(l=>checkRow('longer',l.id,l.label)).join('')}</div>`;
+    return html;
+  },
+  6(){ // Plan
+    const r = SAB.assess(S);
+    const d = r.duration;
+    const cls = r.classification==='focus' ? 'focus' : r.classification==='nofocus' ? 'low' : 'neutral';
+    const title = r.classification==='focus' ? 'SAB with a deep-seated or metastatic focus'
+      : r.classification==='nofocus' ? 'SAB without a deep-seated or metastatic focus' : 'Classification not final yet';
+    let html = header(6,'Plan','') + `<div class="result ${cls}"><div class="eyebrow">Final classification · ${r.risk==='low'?'low':'increased'} risk</div><h2>${title}</h2>`;
+    if (r.classification==='pending') html += `<p>Finish the workup before fixing a duration. Continue treatment and reassess daily.</p>`;
+    if (d) html += `<div class="duration">${tile('pills', d.kind==='focus'?'coral':'teal', true)}<span class="num">${d.label}</span><span class="unit">${d.unit}</span></div><p>${d.text}</p>
+        ${d.flags && d.flags.length ? `<div class="factor-chips">${d.flags.map(f=>`<span>${esc(f)}</span>`).join('')}</div>`:''}
+        ${d.kind==='focus'?'<p style="margin-top:6px;font:var(--t-footnote)">Duration for each specific focus is not set by this statement — tailor with ID.</p>':''}`;
+    html += `</div>`;
+    if (d && d.days) {
+      const st = SAB.startDate(S.clearDate, S.sourceDate);
+      html += `<div class="list" style="margin-top:var(--s-3)" aria-label="Day counter">
+        <div class="field">${tile('calendar','green')}<label for="clr" style="flex:1">Clearance day<small>First negative = Day 1</small></label><input id="clr" type="date" data-date="clearDate" value="${S.clearDate}"></div>
+        <div class="field">${tile('scan','indigo')}<label for="src" style="flex:1">Source control<small>Optional</small></label><input id="src" type="date" data-date="sourceDate" value="${S.sourceDate}"></div>
+        ${st ? `<div class="calc-out"><div><span>Day 1${st.basis==='source'?' (source control)':''}</span><b>${fmt(st.date)}</b></div>
+          <div><span>${d.kind==='focus'?'Earliest end · day 28':'Last day · day 14'}</span><b>${fmt(SAB.lastDay(st.date,d.days))}</b></div></div>` : ''}
+      </div>`;
+    }
+    html += `<details class="card kim" style="margin-top:var(--s-3)"><summary>${tile('info','slate')}Keep in mind${ICON.chev}</summary><ul>
+      <li>Risk is dynamic — re-examine daily; low risk can become increased risk.</li>
+      <li>Culture until negative. A later positive (skip phenomenon) moves Day 1.</li>
+      <li>Antibiotic choice (MRSA vs MSSA) is not covered by this statement.</li></ul></details>`;
+    return html;
+  }
+};
+
+function fmt(iso){ const [y,m,d]=iso.split('-').map(Number); return new Date(y,m-1,d).toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric'}); }
+
+// Can the user continue from this step?
+function canContinue(){
+  const r = SAB.assess(S);
+  switch(S.step){
+    case 0: return r.eligible === true;
+    case 1: return !!S.fubc48 && !!S.tte;
+    case 2: return S.community !== null && S.device !== null;
+    case 3: return S.other.length > 0 || S.otherDone;
+    case 4: return true;
+    case 5: if (!S.focus) return false;
+            if (S.focus==='no') return S.resolved !== null && S.workupComplete !== null;
+            return true;
+    default: return true;   // Plan: bottom button copies the summary
+  }
+}
+
+function render(){
+  const stage = $('#stage');
+  stage.innerHTML = view[S.step]();
+  stage.classList.remove('step-enter','step-back'); void stage.offsetWidth;
+  stage.classList.add(dir==='back'?'step-back':'step-enter');
+  $('#backBtn').hidden = S.step === 0;
+  $('#resetBtn').hidden = S.step === 0 && S.adult === null && S.saConfirmed === null;
+  $('#navTitle').textContent = STEPS[S.step];
+  const next = $('#nextBtn');
+  next.textContent = S.step === LAST ? 'Copy summary for the chart' : (S.step === 5 || (S.step === 4 && skipResults())) ? 'See plan' : 'Continue';
+  next.classList.toggle('btn-secondary', S.step === LAST); next.classList.toggle('btn-primary', S.step !== LAST);
+  next.disabled = !canContinue();
+}
+function refresh(){ // re-render in place without the slide animation
+  const y = getY(); const d = dir; dir='none';
+  const stage = $('#stage'); stage.innerHTML = view[S.step]();
+  $('#nextBtn').disabled = !canContinue();
+  $('#resetBtn').hidden = false;
+  setY(y); dir = d;
+}
+function go(n){ dir = n > S.step ? 'fwd' : 'back'; S.step = n; setY(0); render(); }
+
+// ---------- events ----------
+document.addEventListener('click', e => {
+  const def = e.target.closest('[data-def]');
+  if (def){ e.stopPropagation(); openSheet(def.dataset.def); return; }
+  const set = e.target.closest('[data-set]');
+  if (set){
+    const k = set.dataset.set, v = JSON.parse(set.dataset.val);
+    S[k] = v;
+    if (k==='focus' && v!=='no'){ S.resolved=null; S.workupComplete=null; S.longer=[]; }
+    haptic(); refresh(); return;
+  }
+  const tg = e.target.closest('[data-toggle]');
+  if (tg){
+    const list = tg.dataset.toggle, id = tg.dataset.id, arr = S[list];
+    const i = arr.indexOf(id); i>=0 ? arr.splice(i,1) : arr.push(id);
+    if (list==='other') S.otherDone = arr.length>0;
+    haptic(); refresh(); return;
+  }
+  if (e.target.closest('[data-none]')){ S.other = []; S.otherDone = true; haptic(); refresh(); return; }
+});
+document.addEventListener('change', e => {
+  const k = e.target.dataset.date; if (k){ S[k] = e.target.value; refresh(); }
+});
+document.addEventListener('keydown', e => {
+  if ((e.key==='Enter'||e.key===' ') && e.target.matches('[data-def]')){ e.preventDefault(); openSheet(e.target.dataset.def); }
+  if (e.key==='Escape') closeSheet();
+});
+$('#nextBtn').addEventListener('click', () => {
+  if (S.step === LAST) { copySummary(); return; }
+  if (!canContinue()) return;
+  // Low-risk or TTE-proven endocarditis skip straight to the plan
+  go(S.step === 4 && skipResults() ? LAST : S.step + 1);
+});
+$('#backBtn').addEventListener('click', () => go(S.step === LAST && skipResults() ? 4 : Math.max(0, S.step-1)));
+$('#resetBtn').addEventListener('click', () => { S = fresh(); dir='back'; setY(0); render(); toast('Cleared'); });
+
+// Tabs
+document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+  document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x===t));
+  ['assess','glossary','about'].forEach(v => $('#view-'+v).hidden = v !== t.dataset.tab);
+  const onAssess = t.dataset.tab==='assess';
+  $('#ctaBar').hidden = !onAssess;
+  $('#backBtn').hidden = !onAssess || S.step===0;
+  $('#resetBtn').hidden = !onAssess;
+  $('#navTitle').textContent = onAssess ? STEPS[S.step] : t.textContent.trim();
+  setY(0);
+}));
+
+// Nav bar hairline + compact title on scroll
+const onScroll = () => $('#navbar').classList.toggle('scrolled', getY() > 40);
+addEventListener('scroll', onScroll, {passive:true});
+$('#scroller').addEventListener('scroll', onScroll, {passive:true});
+// Fill static icon tiles (About screen)
+document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = ICON[el.dataset.icon]);
+
+// Sheet
+function openSheet(term){ $('#sheetTitle').textContent = term; $('#sheetBody').textContent = DEFS[term] || ''; $('#scrim').classList.add('open'); $('#sheet').classList.add('open'); $('#sheetClose').focus(); }
+function closeSheet(){ $('#scrim').classList.remove('open'); $('#sheet').classList.remove('open'); }
+$('#scrim').addEventListener('click', closeSheet); $('#sheetClose').addEventListener('click', closeSheet);
+
+// Glossary
+function renderGloss(q=''){
+  const items = Object.entries(DEFS).filter(([k,v]) => (k+v).toLowerCase().includes(q.toLowerCase()));
+  $('#glossList').innerHTML = items.length ? items.map(([k,v]) => `<details class="term"><summary>${tile(...(TERM_ICON[k]||['book','teal']))}<span class="lbl">${esc(k)}</span>${ICON.chev}</summary><div class="def">${esc(v)}</div></details>`).join('')
+    : `<p style="padding:var(--s-4);color:var(--c-ink-2)">No matching terms.</p>`;
+}
+$('#q').addEventListener('input', e => renderGloss(e.target.value));
+
+// Summary
+function copySummary(){
+  const r = SAB.assess(S), d = r.duration;
+  const lines = ['S. aureus bacteremia — 2026 IDSA/ESCMID framework (SAB Guide, clinical educational tool; verify clinically)',
+    `Risk: ${r.risk==='low'?'Low-risk':'Increased-risk'} SAB`];
+  const f = [...r.keyFactors, ...r.otherFactors]; if (f.length) lines.push('Risk factors: ' + f.join('; '));
+  if (r.tee) lines.push('Echo: ' + r.tee.text);
+  lines.push('Classification: ' + ({focus:'SAB with deep-seated/metastatic focus', nofocus:'SAB without deep-seated/metastatic focus', pending:'pending workup'}[r.classification]));
+  if (d) lines.push('Duration: ' + d.text + (d.flags&&d.flags.length?' Factors favoring longer: '+d.flags.join('; ')+'.':''));
+  const st = SAB.startDate(S.clearDate, S.sourceDate);
+  if (st && d && d.days) lines.push(`Day 1: ${st.date}; ${d.kind==='focus'?'earliest end':'last day'}: ${SAB.lastDay(st.date,d.days)}`);
+  const text = lines.join('\n');
+  (navigator.clipboard ? navigator.clipboard.writeText(text) : Promise.reject()).then(() => toast('Summary copied'), () => {
+    const ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select();
+    try{ document.execCommand('copy'); toast('Summary copied'); }catch(_){ toast('Copy not available'); } ta.remove();
+  });
+}
+let tt; function toast(msg){ const t=$('#toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(tt); tt=setTimeout(()=>t.classList.remove('show'),1600); }
+function haptic(){ if (navigator.vibrate) navigator.vibrate(8); }
+
+// Offline support (only when served from a web address, not a local file)
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(()=>{});
+
+// Computer preview: scale the phone frame to fit the window (never larger than real size)
+function fit(){ const k = Math.min(1, (innerWidth-40)/454, (innerHeight-40)/952); $('#app').style.setProperty('--fit', FRAME_MQ.matches ? k.toFixed(3) : 1); }
+addEventListener('resize', fit); fit();
+
+renderGloss(); render();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "SAB Guide — Adult S. aureus Bacteremia",
+  "short_name": "SAB Guide",
+  "description": "Clinical educational tool for clinicians: adult Staphylococcus aureus bacteremia risk stratification, workup and duration, based on the 2026 IDSA/ESCMID consensus statements. No patient data stored or sent.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F7F6",
+  "theme_color": "#0B6B66",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

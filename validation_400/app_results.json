@@ -1,0 +1,6849 @@
+[
+ {
+  "id": "SAB-001",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Sep 26",
+   "Thu, Oct 9"
+  ]
+ },
+ {
+  "id": "SAB-002",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Wed, Sep 20",
+   "Tue, Oct 3"
+  ]
+ },
+ {
+  "id": "SAB-003",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Mar 16",
+   "Mon, Mar 29"
+  ]
+ },
+ {
+  "id": "SAB-004",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Jan 18",
+   "Fri, Jan 31"
+  ]
+ },
+ {
+  "id": "SAB-005",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-006",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Apr 3",
+   "Thu, Apr 16"
+  ]
+ },
+ {
+  "id": "SAB-007",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-008",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 23",
+   "Sun, Mar 8"
+  ]
+ },
+ {
+  "id": "SAB-009",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, May 31",
+   "Sun, Jun 13"
+  ]
+ },
+ {
+  "id": "SAB-010",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Jan 8",
+   "Thu, Jan 21"
+  ]
+ },
+ {
+  "id": "SAB-011",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Feb 20",
+   "Fri, Mar 5"
+  ]
+ },
+ {
+  "id": "SAB-012",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Jan 11",
+   "Sun, Jan 24"
+  ]
+ },
+ {
+  "id": "SAB-013",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Apr 1",
+   "Wed, Apr 14"
+  ]
+ },
+ {
+  "id": "SAB-014",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Jan 21",
+   "Thu, Feb 3"
+  ]
+ },
+ {
+  "id": "SAB-015",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Jan 3",
+   "Sat, Jan 16"
+  ]
+ },
+ {
+  "id": "SAB-016",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Dec 31",
+   "Wed, Jan 13"
+  ]
+ },
+ {
+  "id": "SAB-017",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Mar 19",
+   "Wed, Apr 1"
+  ]
+ },
+ {
+  "id": "SAB-018",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Wed, Aug 19",
+   "Tue, Sep 1"
+  ]
+ },
+ {
+  "id": "SAB-019",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Apr 28",
+   "Mon, May 11"
+  ]
+ },
+ {
+  "id": "SAB-020",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Sep 26",
+   "Sat, Oct 9"
+  ]
+ },
+ {
+  "id": "SAB-021",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 21",
+   "Sun, Mar 5"
+  ]
+ },
+ {
+  "id": "SAB-022",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Feb 6",
+   "Thu, Feb 19"
+  ]
+ },
+ {
+  "id": "SAB-023",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-024",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Apr 22",
+   "Mon, May 5"
+  ]
+ },
+ {
+  "id": "SAB-025",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Wed, Nov 29",
+   "Tue, Dec 12"
+  ]
+ },
+ {
+  "id": "SAB-026",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Sep 30",
+   "Mon, Oct 13"
+  ]
+ },
+ {
+  "id": "SAB-027",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Wed, Apr 21",
+   "Tue, May 4"
+  ]
+ },
+ {
+  "id": "SAB-028",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-029",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Sep 1",
+   "Thu, Sep 14"
+  ]
+ },
+ {
+  "id": "SAB-030",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Feb 20",
+   "Fri, Mar 5"
+  ]
+ },
+ {
+  "id": "SAB-031",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Oct 1",
+   "Sat, Oct 14"
+  ]
+ },
+ {
+  "id": "SAB-032",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Mar 4",
+   "Mon, Mar 17"
+  ]
+ },
+ {
+  "id": "SAB-033",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Nov 27",
+   "Wed, Dec 10"
+  ]
+ },
+ {
+  "id": "SAB-034",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Sep 14",
+   "Sat, Sep 27"
+  ]
+ },
+ {
+  "id": "SAB-035",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, May 17",
+   "Sun, May 30"
+  ]
+ },
+ {
+  "id": "SAB-036",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, May 3",
+   "Sat, May 16"
+  ]
+ },
+ {
+  "id": "SAB-037",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-038",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Dec 31",
+   "Wed, Jan 13"
+  ]
+ },
+ {
+  "id": "SAB-039",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Wed, Jan 26",
+   "Tue, Feb 8"
+  ]
+ },
+ {
+  "id": "SAB-040",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Jun 26",
+   "Thu, Jul 9"
+  ]
+ },
+ {
+  "id": "SAB-041",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 28",
+   "Sun, Mar 12"
+  ]
+ },
+ {
+  "id": "SAB-042",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-043",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Oct 26",
+   "Sun, Nov 8"
+  ]
+ },
+ {
+  "id": "SAB-044",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Oct 18",
+   "Fri, Oct 31"
+  ]
+ },
+ {
+  "id": "SAB-045",
+  "error": null,
+  "riskText": "Low-risk SAB",
+  "advice": [
+   "TEE: use judgment"
+  ],
+  "results_screen": false,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, May 26",
+   "Thu, Jun 8"
+  ]
+ },
+ {
+  "id": "SAB-046",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-047",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-048",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-049",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-050",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-051",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-052",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-053",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-054",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-055",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-056",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-057",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-058",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-059",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-060",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-061",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-062",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-063",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-064",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-065",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-066",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-067",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-068",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-069",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "Get a TTE"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-070",
+  "error": null,
+  "riskText": "Low-risk SAB (provisional)",
+  "advice": [
+   "TEE may be unnecessary"
+  ],
+  "results_screen": false,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-071",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-072",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-073",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Sep 14",
+   "Wed, Oct 11"
+  ]
+ },
+ {
+  "id": "SAB-074",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Jul 26",
+   "Fri, Aug 8"
+  ]
+ },
+ {
+  "id": "SAB-075",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Wed, Dec 22",
+   "Tue, Jan 4"
+  ]
+ },
+ {
+  "id": "SAB-076",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Nov 6",
+   "Sun, Dec 3"
+  ]
+ },
+ {
+  "id": "SAB-077",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Dec 25",
+   "Thu, Jan 7"
+  ]
+ },
+ {
+  "id": "SAB-078",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Jan 31",
+   "Fri, Feb 27"
+  ]
+ },
+ {
+  "id": "SAB-079",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-080",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Jun 26",
+   "Wed, Jul 23"
+  ]
+ },
+ {
+  "id": "SAB-081",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Mon, Dec 21",
+   "Sun, Jan 3"
+  ]
+ },
+ {
+  "id": "SAB-082",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Dec 17",
+   "Sat, Jan 13"
+  ]
+ },
+ {
+  "id": "SAB-083",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Oct 26",
+   "Mon, Nov 8"
+  ]
+ },
+ {
+  "id": "SAB-084",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-085",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Mar 8",
+   "Fri, Apr 4"
+  ]
+ },
+ {
+  "id": "SAB-086",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-087",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Oct 12",
+   "Sat, Nov 8"
+  ]
+ },
+ {
+  "id": "SAB-088",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, Apr 23",
+   "Tue, May 20"
+  ]
+ },
+ {
+  "id": "SAB-089",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Mon, Jul 21",
+   "Sun, Aug 3"
+  ]
+ },
+ {
+  "id": "SAB-090",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Wed, Jan 27",
+   "Tue, Feb 9"
+  ]
+ },
+ {
+  "id": "SAB-091",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-092",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Thu, Dec 31",
+   "Wed, Jan 13"
+  ]
+ },
+ {
+  "id": "SAB-093",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Fri, Jan 1",
+   "Thu, Jan 14"
+  ]
+ },
+ {
+  "id": "SAB-094",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Tue, Feb 23",
+   "Mon, Mar 8"
+  ]
+ },
+ {
+  "id": "SAB-095",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-096",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-097",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-098",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-099",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Nov 29",
+   "Sat, Dec 26"
+  ]
+ },
+ {
+  "id": "SAB-100",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-101",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Apr 30",
+   "Sat, May 27"
+  ]
+ },
+ {
+  "id": "SAB-102",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Thu, Dec 17",
+   "Wed, Dec 30"
+  ]
+ },
+ {
+  "id": "SAB-103",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-104",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Mon, Jul 12",
+   "Sun, Jul 25"
+  ]
+ },
+ {
+  "id": "SAB-105",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-106",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Sep 27",
+   "Fri, Oct 24"
+  ]
+ },
+ {
+  "id": "SAB-107",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-108",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-109",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, May 9",
+   "Fri, Jun 5"
+  ]
+ },
+ {
+  "id": "SAB-110",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-111",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-112",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Dec 31",
+   "Wed, Jan 27"
+  ]
+ },
+ {
+  "id": "SAB-113",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 14",
+   "Sun, Mar 12"
+  ]
+ },
+ {
+  "id": "SAB-114",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Thu, Dec 14",
+   "Wed, Dec 27"
+  ]
+ },
+ {
+  "id": "SAB-115",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Aug 25",
+   "Thu, Sep 7"
+  ]
+ },
+ {
+  "id": "SAB-116",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Aug 18",
+   "Mon, Aug 31"
+  ]
+ },
+ {
+  "id": "SAB-117",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Feb 24",
+   "Wed, Mar 8"
+  ]
+ },
+ {
+  "id": "SAB-118",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-119",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Jun 15",
+   "Mon, Jun 28"
+  ]
+ },
+ {
+  "id": "SAB-120",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Feb 20",
+   "Fri, Mar 19"
+  ]
+ },
+ {
+  "id": "SAB-121",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-122",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-123",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Mon, Feb 21",
+   "Sun, Mar 5"
+  ]
+ },
+ {
+  "id": "SAB-124",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Aug 7",
+   "Thu, Aug 20"
+  ]
+ },
+ {
+  "id": "SAB-125",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Feb 10",
+   "Wed, Mar 8"
+  ]
+ },
+ {
+  "id": "SAB-126",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-127",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Jun 4",
+   "Wed, Jun 17"
+  ]
+ },
+ {
+  "id": "SAB-128",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Oct 17",
+   "Thu, Nov 13"
+  ]
+ },
+ {
+  "id": "SAB-129",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 16"
+  ]
+ },
+ {
+  "id": "SAB-130",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-131",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-132",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Fri, Nov 14",
+   "Thu, Nov 27"
+  ]
+ },
+ {
+  "id": "SAB-133",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Sun, Mar 12",
+   "Sat, Mar 25"
+  ]
+ },
+ {
+  "id": "SAB-134",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-135",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-136",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-137",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-138",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-139",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-140",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-141",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-142",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-143",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Wed, Feb 25",
+   "Tue, Mar 10"
+  ]
+ },
+ {
+  "id": "SAB-144",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Aug 21",
+   "Fri, Sep 3"
+  ]
+ },
+ {
+  "id": "SAB-145",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-146",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-147",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Fri, Dec 17",
+   "Thu, Dec 30"
+  ]
+ },
+ {
+  "id": "SAB-148",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sun, May 30",
+   "Sat, Jun 12"
+  ]
+ },
+ {
+  "id": "SAB-149",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Tue, Jul 28",
+   "Mon, Aug 10"
+  ]
+ },
+ {
+  "id": "SAB-150",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Wed, Nov 29",
+   "Tue, Dec 12"
+  ]
+ },
+ {
+  "id": "SAB-151",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sat, Jan 31",
+   "Fri, Feb 13"
+  ]
+ },
+ {
+  "id": "SAB-152",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Mon, Sep 27",
+   "Sun, Oct 10"
+  ]
+ },
+ {
+  "id": "SAB-153",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Jan 31",
+   "Fri, Feb 27"
+  ]
+ },
+ {
+  "id": "SAB-154",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Thu, Dec 31",
+   "Wed, Jan 13"
+  ]
+ },
+ {
+  "id": "SAB-155",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-156",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Sat, Dec 9",
+   "Fri, Dec 22"
+  ]
+ },
+ {
+  "id": "SAB-157",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Sun, Apr 27",
+   "Sat, May 10"
+  ]
+ },
+ {
+  "id": "SAB-158",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-159",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-160",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-161",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Oct 11",
+   "Fri, Nov 7"
+  ]
+ },
+ {
+  "id": "SAB-162",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Oct 23",
+   "Sun, Nov 5"
+  ]
+ },
+ {
+  "id": "SAB-163",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-164",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-165",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-166",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-167",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Jan 7",
+   "Mon, Feb 3"
+  ]
+ },
+ {
+  "id": "SAB-168",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Apr 5",
+   "Sun, Apr 18"
+  ]
+ },
+ {
+  "id": "SAB-169",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-170",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-171",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Fri, Jan 7",
+   "Thu, Jan 20"
+  ]
+ },
+ {
+  "id": "SAB-172",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Apr 18",
+   "Thu, May 1"
+  ]
+ },
+ {
+  "id": "SAB-173",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Wed, Aug 6",
+   "Tue, Aug 19"
+  ]
+ },
+ {
+  "id": "SAB-174",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-175",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-176",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Feb 23",
+   "Mon, Mar 22"
+  ]
+ },
+ {
+  "id": "SAB-177",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-178",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Feb 18",
+   "Thu, Mar 2"
+  ]
+ },
+ {
+  "id": "SAB-179",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 28",
+   "Sun, Mar 26"
+  ]
+ },
+ {
+  "id": "SAB-180",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-181",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Wed, Dec 22",
+   "Tue, Jan 4"
+  ]
+ },
+ {
+  "id": "SAB-182",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Mon, Feb 28",
+   "Sun, Mar 12"
+  ]
+ },
+ {
+  "id": "SAB-183",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Feb 29",
+   "Mon, Mar 13"
+  ]
+ },
+ {
+  "id": "SAB-184",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Feb 14",
+   "Thu, Feb 27"
+  ]
+ },
+ {
+  "id": "SAB-185",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-186",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-187",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sat, Sep 25",
+   "Fri, Oct 8"
+  ]
+ },
+ {
+  "id": "SAB-188",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-189",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Jul 3",
+   "Sun, Jul 30"
+  ]
+ },
+ {
+  "id": "SAB-190",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-191",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Feb 4",
+   "Thu, Feb 17"
+  ]
+ },
+ {
+  "id": "SAB-192",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Mon, May 15",
+   "Sun, May 28"
+  ]
+ },
+ {
+  "id": "SAB-193",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-194",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-195",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sun, May 9",
+   "Sat, May 22"
+  ]
+ },
+ {
+  "id": "SAB-196",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Fri, Dec 25",
+   "Thu, Jan 7"
+  ]
+ },
+ {
+  "id": "SAB-197",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 8",
+   "Sun, Jan 4"
+  ]
+ },
+ {
+  "id": "SAB-198",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-199",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Mar 13",
+   "Thu, Mar 26"
+  ]
+ },
+ {
+  "id": "SAB-200",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-201",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-202",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-203",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-204",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Thu, Mar 2",
+   "Wed, Mar 15"
+  ]
+ },
+ {
+  "id": "SAB-205",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Apr 30",
+   "Wed, May 27"
+  ]
+ },
+ {
+  "id": "SAB-206",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-207",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 27",
+   "Sun, Jan 23"
+  ]
+ },
+ {
+  "id": "SAB-208",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-209",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Feb 6",
+   "Thu, Feb 19"
+  ]
+ },
+ {
+  "id": "SAB-210",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Tue, Mar 25",
+   "Mon, Apr 7"
+  ]
+ },
+ {
+  "id": "SAB-211",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-212",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Fri, Nov 3",
+   "Thu, Nov 16"
+  ]
+ },
+ {
+  "id": "SAB-213",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Mon, May 19",
+   "Sun, Jun 1"
+  ]
+ },
+ {
+  "id": "SAB-214",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Jul 30",
+   "Wed, Aug 12"
+  ]
+ },
+ {
+  "id": "SAB-215",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-216",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, Jul 28",
+   "Tue, Aug 24"
+  ]
+ },
+ {
+  "id": "SAB-217",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Wed, Jun 17",
+   "Tue, Jun 30"
+  ]
+ },
+ {
+  "id": "SAB-218",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-219",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Wed, Mar 18",
+   "Tue, Mar 31"
+  ]
+ },
+ {
+  "id": "SAB-220",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Nov 26",
+   "Thu, Dec 23"
+  ]
+ },
+ {
+  "id": "SAB-221",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Tue, Oct 3",
+   "Mon, Oct 16"
+  ]
+ },
+ {
+  "id": "SAB-222",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Feb 12",
+   "Thu, Mar 11"
+  ]
+ },
+ {
+  "id": "SAB-223",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Dec 26",
+   "Fri, Jan 8"
+  ]
+ },
+ {
+  "id": "SAB-224",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Dec 25",
+   "Thu, Jan 21"
+  ]
+ },
+ {
+  "id": "SAB-225",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Tue, Aug 8",
+   "Mon, Aug 21"
+  ]
+ },
+ {
+  "id": "SAB-226",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Tue, Apr 21",
+   "Mon, May 4"
+  ]
+ },
+ {
+  "id": "SAB-227",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, Jan 19",
+   "Tue, Feb 15"
+  ]
+ },
+ {
+  "id": "SAB-228",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 15",
+   "Sun, Mar 14"
+  ]
+ },
+ {
+  "id": "SAB-229",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Dec 31",
+   "Wed, Jan 27"
+  ]
+ },
+ {
+  "id": "SAB-230",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-231",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-232",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Mar 23",
+   "Sun, Apr 5"
+  ]
+ },
+ {
+  "id": "SAB-233",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Sun, Jan 10",
+   "Sat, Jan 23"
+  ]
+ },
+ {
+  "id": "SAB-234",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Jul 8",
+   "Fri, Aug 4"
+  ]
+ },
+ {
+  "id": "SAB-235",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, May 27",
+   "Fri, Jun 23"
+  ]
+ },
+ {
+  "id": "SAB-236",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 16"
+  ]
+ },
+ {
+  "id": "SAB-237",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Jul 28",
+   "Mon, Aug 10"
+  ]
+ },
+ {
+  "id": "SAB-238",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-239",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-240",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-241",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-242",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-243",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Mon, Nov 8",
+   "Sun, Nov 21"
+  ]
+ },
+ {
+  "id": "SAB-244",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Tue, Feb 3",
+   "Mon, Feb 16"
+  ]
+ },
+ {
+  "id": "SAB-245",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-246",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Fri, Feb 26",
+   "Thu, Mar 11"
+  ]
+ },
+ {
+  "id": "SAB-247",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-248",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Dec 10",
+   "Sat, Jan 6"
+  ]
+ },
+ {
+  "id": "SAB-249",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-250",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Wed, Mar 8",
+   "Tue, Mar 21"
+  ]
+ },
+ {
+  "id": "SAB-251",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Jan 31",
+   "Fri, Feb 27"
+  ]
+ },
+ {
+  "id": "SAB-252",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Apr 18",
+   "Thu, May 15"
+  ]
+ },
+ {
+  "id": "SAB-253",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sun, Apr 2",
+   "Sat, Apr 15"
+  ]
+ },
+ {
+  "id": "SAB-254",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-255",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-256",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Sat, Jul 31",
+   "Fri, Aug 13"
+  ]
+ },
+ {
+  "id": "SAB-257",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-258",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-259",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Mon, Feb 28",
+   "Sun, Mar 12"
+  ]
+ },
+ {
+  "id": "SAB-260",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-261",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-262",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-263",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sat, Feb 20",
+   "Fri, Mar 5"
+  ]
+ },
+ {
+  "id": "SAB-264",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Jan 22",
+   "Wed, Feb 4"
+  ]
+ },
+ {
+  "id": "SAB-265",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-266",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-267",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-268",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Dec 28",
+   "Sat, Jan 24"
+  ]
+ },
+ {
+  "id": "SAB-269",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 2"
+  ]
+ },
+ {
+  "id": "SAB-270",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-271",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Sep 10",
+   "Sat, Oct 7"
+  ]
+ },
+ {
+  "id": "SAB-272",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Dec 20",
+   "Sun, Jan 16"
+  ]
+ },
+ {
+  "id": "SAB-273",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Sun, Jul 19",
+   "Sat, Aug 1"
+  ]
+ },
+ {
+  "id": "SAB-274",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Tue, Feb 22",
+   "Mon, Mar 6"
+  ]
+ },
+ {
+  "id": "SAB-275",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-276",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Fri, Dec 5",
+   "Thu, Dec 18"
+  ]
+ },
+ {
+  "id": "SAB-277",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-278",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Jan 31",
+   "Fri, Feb 27"
+  ]
+ },
+ {
+  "id": "SAB-279",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Sun, Oct 8",
+   "Sat, Oct 21"
+  ]
+ },
+ {
+  "id": "SAB-280",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Tue, Sep 9",
+   "Mon, Sep 22"
+  ]
+ },
+ {
+  "id": "SAB-281",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-282",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Sat, Feb 7",
+   "Fri, Feb 20"
+  ]
+ },
+ {
+  "id": "SAB-283",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sun, Nov 29",
+   "Sat, Dec 12"
+  ]
+ },
+ {
+  "id": "SAB-284",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Wed, Feb 24",
+   "Tue, Mar 9"
+  ]
+ },
+ {
+  "id": "SAB-285",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-286",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Thu, Jan 28",
+   "Wed, Feb 10"
+  ]
+ },
+ {
+  "id": "SAB-287",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Jun 1",
+   "Mon, Jun 28"
+  ]
+ },
+ {
+  "id": "SAB-288",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-289",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Apr 30",
+   "Wed, May 27"
+  ]
+ },
+ {
+  "id": "SAB-290",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Tue, Jan 19",
+   "Mon, Feb 1"
+  ]
+ },
+ {
+  "id": "SAB-291",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Wed, Jan 28",
+   "Tue, Feb 10"
+  ]
+ },
+ {
+  "id": "SAB-292",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-293",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-294",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Wed, Mar 8",
+   "Tue, Mar 21"
+  ]
+ },
+ {
+  "id": "SAB-295",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Thu, Apr 30",
+   "Wed, May 13"
+  ]
+ },
+ {
+  "id": "SAB-296",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Jul 15",
+   "Mon, Aug 11"
+  ]
+ },
+ {
+  "id": "SAB-297",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Thu, Sep 7",
+   "Wed, Sep 20"
+  ]
+ },
+ {
+  "id": "SAB-298",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Mon, Jan 19",
+   "Sun, Feb 1"
+  ]
+ },
+ {
+  "id": "SAB-299",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Tue, Aug 4",
+   "Mon, Aug 17"
+  ]
+ },
+ {
+  "id": "SAB-300",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Thu, Sep 14",
+   "Wed, Sep 27"
+  ]
+ },
+ {
+  "id": "SAB-301",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-302",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [],
+  "dates": [
+   "Mon, Jan 19",
+   "Sun, Feb 1"
+  ]
+ },
+ {
+  "id": "SAB-303",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Whole-body imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Sun, Aug 22",
+   "Sat, Sep 4"
+  ]
+ },
+ {
+  "id": "SAB-304",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-305",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-306",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Get a TTE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-307",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 18"
+  ]
+ },
+ {
+  "id": "SAB-308",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-309",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-310",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)"
+  ],
+  "dates": [
+   "Sat, Feb 7",
+   "Fri, Feb 20"
+  ]
+ },
+ {
+  "id": "SAB-311",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, Mar 9",
+   "Wed, Apr 5"
+  ]
+ },
+ {
+  "id": "SAB-312",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Jan 3",
+   "Sat, Jan 30"
+  ]
+ },
+ {
+  "id": "SAB-313",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Jul 18",
+   "Sat, Aug 14"
+  ]
+ },
+ {
+  "id": "SAB-314",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Dec 20",
+   "Fri, Jan 16"
+  ]
+ },
+ {
+  "id": "SAB-315",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, Mar 8",
+   "Tue, Apr 4"
+  ]
+ },
+ {
+  "id": "SAB-316",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Sep 1",
+   "Sun, Sep 28"
+  ]
+ },
+ {
+  "id": "SAB-317",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sat, Aug 15",
+   "Fri, Sep 11"
+  ]
+ },
+ {
+  "id": "SAB-318",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Jan 4",
+   "Sun, Jan 31"
+  ]
+ },
+ {
+  "id": "SAB-319",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Feb 3",
+   "Sun, Mar 2"
+  ]
+ },
+ {
+  "id": "SAB-320",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Jun 2",
+   "Thu, Jun 29"
+  ]
+ },
+ {
+  "id": "SAB-321",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Aug 11",
+   "Mon, Sep 7"
+  ]
+ },
+ {
+  "id": "SAB-322",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Dec 25",
+   "Thu, Jan 21"
+  ]
+ },
+ {
+  "id": "SAB-323",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Jan 5",
+   "Mon, Feb 1"
+  ]
+ },
+ {
+  "id": "SAB-324",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Jul 3",
+   "Sun, Jul 30"
+  ]
+ },
+ {
+  "id": "SAB-325",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, Jul 23",
+   "Tue, Aug 19"
+  ]
+ },
+ {
+  "id": "SAB-326",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, Feb 16",
+   "Mon, Mar 15"
+  ]
+ },
+ {
+  "id": "SAB-327",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Tue, May 4",
+   "Mon, May 31"
+  ]
+ },
+ {
+  "id": "SAB-328",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Aug 14",
+   "Sun, Sep 10"
+  ]
+ },
+ {
+  "id": "SAB-329",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Aug 16",
+   "Sun, Sep 12"
+  ]
+ },
+ {
+  "id": "SAB-330",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, May 27",
+   "Tue, Jun 23"
+  ]
+ },
+ {
+  "id": "SAB-331",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Oct 16",
+   "Thu, Nov 12"
+  ]
+ },
+ {
+  "id": "SAB-332",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Aug 16",
+   "Sat, Sep 12"
+  ]
+ },
+ {
+  "id": "SAB-333",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Feb 26",
+   "Thu, Mar 25"
+  ]
+ },
+ {
+  "id": "SAB-334",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Sep 10",
+   "Thu, Oct 7"
+  ]
+ },
+ {
+  "id": "SAB-335",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Mar 3",
+   "Thu, Mar 30"
+  ]
+ },
+ {
+  "id": "SAB-336",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Fri, Oct 16",
+   "Thu, Nov 12"
+  ]
+ },
+ {
+  "id": "SAB-337",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Mon, Aug 16",
+   "Sun, Sep 12"
+  ]
+ },
+ {
+  "id": "SAB-338",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Wed, May 26",
+   "Tue, Jun 22"
+  ]
+ },
+ {
+  "id": "SAB-339",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Thu, May 27",
+   "Wed, Jun 23"
+  ]
+ },
+ {
+  "id": "SAB-340",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Endocarditis on TTE"
+  ],
+  "results_screen": false,
+  "classText": "SAB with a deep-seated or metastatic focus",
+  "durNum": "4+",
+  "durUnit": "weeks",
+  "flags": [],
+  "dates": [
+   "Sun, Jun 28",
+   "Sat, Jul 25"
+  ]
+ },
+ {
+  "id": "SAB-341",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-342",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-343",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-344",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-345",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-346",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-347",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-348",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-349",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-350",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-351",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-352",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-353",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-354",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-355",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-356",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-357",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-358",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-359",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-360",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "—",
+  "durUnit": "",
+  "flags": []
+ },
+ {
+  "id": "SAB-361",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-362",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-363",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-364",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-365",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-366",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-367",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-368",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-369",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-370",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-371",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "Consider TEE",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-372",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-373",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-374",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-375",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-376",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-377",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging",
+   "Whole-body imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-378",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-379",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-380",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE may be unnecessary",
+   "Symptom-directed imaging"
+  ],
+  "results_screen": true,
+  "classText": "Classification not final yet",
+  "durNum": null,
+  "durUnit": null,
+  "flags": []
+ },
+ {
+  "id": "SAB-381",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Sat, Feb 20",
+   "Fri, Mar 5"
+  ]
+ },
+ {
+  "id": "SAB-382",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Sep 12",
+   "Thu, Sep 25"
+  ]
+ },
+ {
+  "id": "SAB-383",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Sep 25",
+   "Thu, Oct 8"
+  ]
+ },
+ {
+  "id": "SAB-384",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Thu, Dec 23",
+   "Wed, Jan 5"
+  ]
+ },
+ {
+  "id": "SAB-385",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Tue, Mar 7",
+   "Mon, Mar 20"
+  ]
+ },
+ {
+  "id": "SAB-386",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Wed, Sep 15",
+   "Tue, Sep 28"
+  ]
+ },
+ {
+  "id": "SAB-387",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft"
+  ],
+  "dates": [
+   "Mon, Feb 28",
+   "Sun, Mar 12"
+  ]
+ },
+ {
+  "id": "SAB-388",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, May 8",
+   "Thu, May 21"
+  ]
+ },
+ {
+  "id": "SAB-389",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Wed, Jan 20",
+   "Tue, Feb 2"
+  ]
+ },
+ {
+  "id": "SAB-390",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Tue, Jan 27",
+   "Mon, Feb 9"
+  ]
+ },
+ {
+  "id": "SAB-391",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sat, Sep 30",
+   "Fri, Oct 13"
+  ]
+ },
+ {
+  "id": "SAB-392",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sat, Oct 4",
+   "Fri, Oct 17"
+  ]
+ },
+ {
+  "id": "SAB-393",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited"
+  ],
+  "dates": [
+   "Thu, Feb 18",
+   "Wed, Mar 3"
+  ]
+ },
+ {
+  "id": "SAB-394",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Wed, Dec 30",
+   "Tue, Jan 12"
+  ]
+ },
+ {
+  "id": "SAB-395",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Fri, Jan 14",
+   "Thu, Jan 27"
+  ]
+ },
+ {
+  "id": "SAB-396",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place"
+  ],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-397",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Mon, Jul 3",
+   "Sun, Jul 16"
+  ]
+ },
+ {
+  "id": "SAB-398",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Thu, Apr 30",
+   "Wed, May 13"
+  ]
+ },
+ {
+  "id": "SAB-399",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Sun, Feb 20",
+   "Sat, Mar 4"
+  ]
+ },
+ {
+  "id": "SAB-400",
+  "error": null,
+  "riskText": "Increased-risk SAB",
+  "advice": [
+   "TEE suggested",
+   "Symptom-directed imaging",
+   "Reassess source control"
+  ],
+  "results_screen": true,
+  "classText": "SAB without a deep-seated or metastatic focus",
+  "durNum": "14",
+  "durUnit": "days",
+  "flags": [
+   "Prolonged bacteremia (≥48 h)",
+   "Workup incomplete or limited",
+   "Intracardiac device left in place",
+   "Recently placed endovascular graft",
+   "Clot (DVT) at a central line site"
+  ],
+  "dates": [
+   "Thu, May 22",
+   "Wed, Jun 4"
+  ]
+ }
+]
