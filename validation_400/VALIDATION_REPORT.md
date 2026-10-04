@@ -1,6 +1,6 @@
 # SAB Guide — 400-Patient Validation Report
 
-**App version:** 2.4 · **Run date:** October 4, 2026 (first run on v1.9, September 25 — also 400/400) · **Result: 400 / 400 patients fully correct (100%)**
+**App version:** 2.5 · **Run date:** October 4, 2026 (first run on v1.9, September 25 — also 400/400) · **Result: 400 / 400 patients fully correct (100%)**
 
 ## What was tested
 

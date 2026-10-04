@@ -92,6 +92,7 @@ A running list of what you should be able to explain in your own words. Boxes ge
 ## Session log
 - Sep 23: Files built. Starting point: "start me from zero."
 - Sep 23: Lesson 1 quiz — correct on "what decides duration" and "why old labels were dropped"; needed help on "why one risk factor is enough."
+- Oct 4: v2.5 — fixed leftover scroll: exact bottom space, no bounce, automatic tighter layout inside Safari; 0 of 16,212 screen views scroll.
 - Oct 4: v2.4 — first screen gets Preop-Clearance-style toggles: moon (dark mode) and AA (larger text).
 - Oct 4: v2.3 — Aa button only on the first screen, text size only; Light/Dark follows the phone.
 - Oct 4: v2.2 — Aa display panel: Light/Dark and Standard/Large text, remembered on the phone; accuracy still 400/400.

@@ -32,7 +32,7 @@ Designed for iPhone 13 Pro Max and newer (428 × 926 points), works on any moder
 6. **Workup results** — increased-risk patients only: focus found? symptoms resolved? workup complete? (Low-risk patients and TTE-proven endocarditis skip this screen.)
 7. **Plan** — with vs without deep-seated focus; 14 days vs 4+ weeks; Day 1 = first negative culture (or source control if later). The bottom button copies a summary for the chart.
 
-Every step fits one screen with no scrolling on iPhone 13 Pro Max through 17 Pro Max (checked with the longest possible content). Definitions and About are reference lists and scroll normally.
+Every assessment step fits one screen with no scrolling on iPhone 13 Pro Max through 17 Pro Max, both from the Home Screen icon and inside a Safari tab (a tighter layout switches on automatically when Safari's bars shorten the screen). Checked for all 400 test patients on each phone: 16,212 screen views, 0 scrolling. Definitions and About are reference lists and scroll normally.
 
 ## Validation
 

@@ -61,6 +61,7 @@
   --d-fast:140ms; --d-med:260ms; --d-slow:420ms;
 
   --tabbar-h:56px;
+  --cta-h:76px;              /* bottom button bar: 12 + 52 + 12 */
   --safe-top:env(safe-area-inset-top);
   --safe-bottom:env(safe-area-inset-bottom);
 
@@ -110,7 +111,7 @@
    BASE
    ========================================================= */
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%;overflow-x:clip}
+html,body{height:100%;overflow-x:clip;overscroll-behavior:none}
 body{
   font:var(--t-body); color:var(--c-ink); background:var(--c-bg);
   -webkit-font-smoothing:antialiased; -webkit-text-size-adjust:100%;
@@ -136,7 +137,7 @@ em.sp{font-style:italic}
 .navbar.scrolled{border-bottom-color:var(--c-line)}
 .nav-title{font:var(--t-headline);opacity:0;transform:translateY(4px);transition:opacity var(--d-med) var(--ease),transform var(--d-med) var(--ease);text-align:center;white-space:nowrap}
 .navbar.scrolled .nav-title{opacity:1;transform:none}
-.nav-btn{min-height:var(--touch);min-width:var(--touch);display:inline-flex;align-items:center;gap:2px;color:var(--c-primary);font:var(--t-body);padding:0 var(--s-2);border-radius:var(--r-sm);transition:opacity var(--d-fast)}
+.nav-btn{min-height:var(--touch);min-width:var(--touch);display:inline-flex;white-space:nowrap;align-items:center;gap:2px;color:var(--c-primary);font:var(--t-body);padding:0 var(--s-2);border-radius:var(--r-sm);transition:opacity var(--d-fast)}
 .nav-btn:active{opacity:.45}
 .nav-btn[hidden]{display:none}
 .nav-right{justify-self:end;display:flex;align-items:center}
@@ -149,7 +150,7 @@ em.sp{font-style:italic}
 .hbtn[aria-pressed="true"] .hv{background:var(--c-primary);color:var(--c-primary-ink)}
 .nav-btn svg{width:22px;height:22px}
 
-.view{padding:0 var(--gutter) calc(var(--tabbar-h) + var(--safe-bottom) + 110px)}
+.view{padding:0 var(--gutter) calc(var(--tabbar-h) + var(--safe-bottom) + var(--cta-h) + 6px)}
 .view[hidden]{display:none}
 .large-title{font:var(--t-large-title);letter-spacing:-.01em;margin:2px 0 var(--s-2)}
 .subtitle{font:var(--t-callout);color:var(--c-ink-2);margin:calc(-1 * var(--s-1)) 0 var(--s-3)}
@@ -203,7 +204,7 @@ em.sp{font-style:italic}
 .list{background:var(--c-surface);border-radius:var(--r-lg);border:1px solid var(--c-line);box-shadow:var(--elev-1);overflow:hidden}
 .row{
   width:100%;min-height:48px;display:flex;align-items:center;gap:var(--s-3);
-  padding:10px var(--s-4);text-align:left;position:relative;transition:background var(--d-fast);
+  padding:8px var(--s-4);text-align:left;position:relative;transition:background var(--d-fast);
 }
 .row + .row::before{content:"";position:absolute;top:0;left:58px;right:0;height:.5px;background:var(--c-line)}
 .row:active{background:var(--c-surface-2)}
@@ -350,6 +351,31 @@ details.kim[open] summary > svg{transform:rotate(90deg)}
 details.kim ul{padding:0 var(--s-4) var(--s-3) 40px;font:var(--t-footnote);color:var(--c-ink-2)}
 details.kim li+li{margin-top:4px}
 
+/* Compact layout for shorter screens (e.g. inside a Safari tab, where Safari's bars take ~130pt).
+   Phones only — the computer preview frame is always full height. */
+@media (max-height: 840px) and (hover: none){
+  :root{ --cta-h:64px; }
+  .navbar .nav-title{opacity:1;transform:none}          /* step name lives in the top bar */
+  .step-title,.view .subtitle{display:none}
+  .progress{margin:2px 0 6px}
+  .step-label{margin-bottom:8px}
+  .card-pad{padding:8px 12px}
+  .card + .card{margin-top:8px}
+  .section-h{margin:10px 4px 6px}
+  .q-head{margin-bottom:6px}
+  .row{min-height:44px;padding:6px var(--s-4)}
+  .adv{padding:8px var(--s-4)}
+  .result{padding:12px 14px}
+  .hero{padding:10px 12px;margin-bottom:10px}
+  .hero .tile.lg{width:44px;height:44px}
+  .cta-bar{padding:6px var(--gutter)}
+  .choices.stack .choice{min-height:52px}
+  .duration{margin:0 0 6px}
+  .duration .num{font-size:38px}
+  .calc-out{padding:8px var(--s-4)}
+  .field{min-height:48px}
+}
+
 /* Icon tile */
 .tile{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;flex:none;background:var(--tile,var(--i-teal));color:#fff}
 .tile svg{width:18px;height:18px}
@@ -482,7 +508,7 @@ details.term .def{padding-left:58px}
       <p class="ref">Liu C, Chambers HF, Kern WV, Vandenesch F, et al. <i>2026 Consensus Statements by the Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) on Staphylococcus aureus Bacteremia: Risk Stratification, Diagnostic Evaluation, and Management of Adults and Children.</i> Executive Summary, Consensus Statements 1–7.</p>
       <p class="meta">Developed jointly by IDSA and ESCMID, with PIDS, ESPID, SHEA, SIDP and ASHP representation. Correspondence: practiceguidelines@idsociety.org</p>
     </div>
-    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.4 · October 2026</p>
+    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.5 · October 2026</p>
   </main>
 
   </div><!-- /scroller -->
@@ -745,7 +771,7 @@ const infoBtn = term => `<span class="info" role="button" tabindex="0" data-def=
 const header = (i, title, sub) => `
   <div class="progress" aria-hidden="true">${STEPS.map((_,k)=>`<span class="${k<=i?'done':''}"></span>`).join('')}</div>
   <div class="step-label">Step ${i+1} of ${STEPS.length} · ${STEPS[i]}</div>
-  <h1 class="large-title">${title}</h1>${sub?`<p class="subtitle">${sub}</p>`:''}`;
+  <h1 class="large-title step-title">${title}</h1>${sub?`<p class="subtitle">${sub}</p>`:''}`;
 const REC_COLOR = {heart:'coral', search:'blue', scan:'indigo', clock:'amber'};
 const rec = (icon, level, title, body, warn) => `<div class="card card-pad"><div class="rec">${tile(icon, REC_COLOR[icon]||'teal', true)}<div>
   <div class="level ${warn?'warn':''}">${level}</div><h3>${title}</h3><p>${body}</p></div></div></div>`;
@@ -886,6 +912,7 @@ function render(){
   $('#displayBtns').hidden = S.step !== 0;
   $('#resetBtn').hidden = S.step === 0 && S.adult === null && S.saConfirmed === null;
   $('#navTitle').textContent = STEPS[S.step];
+  $('#navTitle').style.visibility = S.step === 0 ? 'hidden' : '';   // first screen already shows "Assess" + step label
   const next = $('#nextBtn');
   next.textContent = S.step === LAST ? 'Copy summary for the chart' : (S.step === 5 || (S.step === 4 && skipResults())) ? 'See plan' : 'Continue';
   next.classList.toggle('btn-secondary', S.step === LAST); next.classList.toggle('btn-primary', S.step !== LAST);
@@ -947,6 +974,7 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
   $('#displayBtns').hidden = !onAssess || S.step!==0;
   $('#resetBtn').hidden = !onAssess;
   $('#navTitle').textContent = onAssess ? STEPS[S.step] : t.textContent.trim();
+  $('#navTitle').style.visibility = onAssess && S.step === 0 ? 'hidden' : '';
   setY(0);
 }));
 
