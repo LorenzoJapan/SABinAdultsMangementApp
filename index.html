@@ -68,8 +68,9 @@
   --i-teal:#0B6B66; --i-blue:#2A64A8; --i-green:#2C7A4B; --i-amber:#A45F00;
   --i-coral:#B8402F; --i-rose:#A8385A; --i-slate:#52636A; --i-indigo:#4C5AA6;
 }
+/* Dark: follows the phone until the moon button is used, then the choice sticks */
 @media (prefers-color-scheme: dark){
-  :root{
+  :root:not([data-theme="light"]){
     --c-bg:#111719; --c-surface:#1B2326; --c-surface-2:#232D30; --c-line:#2E3A3D;
     --c-ink:#E8EEEC; --c-ink-2:#A9B6B9;
     --c-primary:#5FD1C4; --c-primary-ink:#0B1F1D; --c-primary-soft:#173331;
@@ -79,6 +80,16 @@
     --c-overlay:rgba(0,0,0,.5);
     --elev-1:none; --elev-2:0 8px 24px -10px rgba(0,0,0,.6);
   }
+}
+:root[data-theme="dark"]{
+    --c-bg:#111719; --c-surface:#1B2326; --c-surface-2:#232D30; --c-line:#2E3A3D;
+    --c-ink:#E8EEEC; --c-ink-2:#A9B6B9;
+    --c-primary:#5FD1C4; --c-primary-ink:#0B1F1D; --c-primary-soft:#173331;
+    --c-low:#7FE0B0; --c-low-bg:#15291F;
+    --c-inc:#F5C27A; --c-inc-bg:#2E2310;
+    --c-focus:#F4A195; --c-focus-bg:#33191A;
+    --c-overlay:rgba(0,0,0,.5);
+    --elev-1:none; --elev-2:0 8px 24px -10px rgba(0,0,0,.6);
 }
 /* Text size: Large (Aa button) — every text style steps up */
 :root[data-text="large"]{
@@ -129,7 +140,13 @@ em.sp{font-style:italic}
 .nav-btn:active{opacity:.45}
 .nav-btn[hidden]{display:none}
 .nav-right{justify-self:end;display:flex;align-items:center}
-.pref-h{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--c-ink-2);margin:var(--s-4) 0 var(--s-2)}
+.hbtns{display:inline-flex}
+.hbtns[hidden]{display:none}
+.hbtn{width:44px;height:44px;display:grid;place-items:center}             /* 44pt tap area */
+.hbtn .hv{width:36px;height:34px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;
+  background:var(--c-surface-2);color:var(--c-primary);transition:background var(--d-fast),color var(--d-fast),transform var(--d-fast)}
+.hbtn:active .hv{transform:scale(.92)}
+.hbtn[aria-pressed="true"] .hv{background:var(--c-primary);color:var(--c-primary-ink)}
 .nav-btn svg{width:22px;height:22px}
 
 .view{padding:0 var(--gutter) calc(var(--tabbar-h) + var(--safe-bottom) + 110px)}
@@ -382,7 +399,8 @@ details.term .def{padding-left:58px}
   .cta-bar,.tabbar,.sheet{position:absolute}
   .scrim,.toast{position:absolute}
 }
-@media (hover:hover) and (pointer:fine) and (prefers-color-scheme: dark){ body{background:#0A0E10} }
+@media (hover:hover) and (pointer:fine) and (prefers-color-scheme: dark){ :root:not([data-theme="light"]) body{background:#0A0E10} }
+@media (hover:hover) and (pointer:fine){ :root[data-theme="dark"] body{background:#0A0E10} }
 
 /* Pretend iPhone status bar — only shown in the computer preview frame */
 .statusbar{display:none;position:absolute;top:0;left:0;right:0;height:47px;z-index:55;align-items:center;justify-content:space-between;padding:6px 34px 0 44px;font:600 16px/1 var(--font);color:var(--c-ink);pointer-events:none}
@@ -408,7 +426,7 @@ details.term .def{padding-left:58px}
     <div><button class="nav-btn" id="backBtn" hidden aria-label="Back to previous step">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg><span>Back</span></button></div>
     <div class="nav-title" id="navTitle">SAB Guide</div>
-    <div class="nav-right"><button class="nav-btn" id="displayBtn" aria-label="Text size"><span style="font:600 17px/1 var(--font)">A</span><span style="font:600 12px/1 var(--font);margin-left:1px">a</span></button><button class="nav-btn" id="resetBtn" hidden>Start over</button></div>
+    <div class="nav-right"><span id="displayBtns" class="hbtns"><button class="hbtn" id="darkBtn" aria-label="Dark mode" aria-pressed="false"><span class="hv"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg></span></button><button class="hbtn" id="bigBtn" aria-label="Larger text" aria-pressed="false"><span class="hv" style="font:700 13px/1 var(--font)">A<span style="font-size:16px">A</span></span></button></span><button class="nav-btn" id="resetBtn" hidden>Start over</button></div>
   </header>
 
   <!-- ================= ASSESS ================= -->
@@ -455,7 +473,7 @@ details.term .def{padding-left:58px}
     <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-green)" data-icon="checkShield"></span><h3>Privacy</h3></div>
       <ul>
         <li><b>No protected health information (PHI).</b> The app never asks for names, record numbers or other patient identifiers — please don't type any in.</li>
-        <li>Answers stay on this device, are not saved, and clear when you tap Start over or close the app. Only your text-size choice is remembered on this phone.</li>
+        <li>Answers stay on this device, are not saved, and clear when you tap Start over or close the app. Only your display choices (dark mode, larger text) are remembered on this phone.</li>
         <li>Nothing is sent over the internet — no accounts, tracking or analytics.</li>
         <li>Designed for HIPAA-conscious use.</li>
       </ul>
@@ -464,7 +482,7 @@ details.term .def{padding-left:58px}
       <p class="ref">Liu C, Chambers HF, Kern WV, Vandenesch F, et al. <i>2026 Consensus Statements by the Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) on Staphylococcus aureus Bacteremia: Risk Stratification, Diagnostic Evaluation, and Management of Adults and Children.</i> Executive Summary, Consensus Statements 1–7.</p>
       <p class="meta">Developed jointly by IDSA and ESCMID, with PIDS, ESPID, SHEA, SIDP and ASHP representation. Correspondence: practiceguidelines@idsociety.org</p>
     </div>
-    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.3 · October 2026</p>
+    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.4 · October 2026</p>
   </main>
 
   </div><!-- /scroller -->
@@ -865,7 +883,7 @@ function render(){
   stage.classList.remove('step-enter','step-back'); void stage.offsetWidth;
   stage.classList.add(dir==='back'?'step-back':'step-enter');
   $('#backBtn').hidden = S.step === 0;
-  $('#displayBtn').hidden = S.step !== 0;
+  $('#displayBtns').hidden = S.step !== 0;
   $('#resetBtn').hidden = S.step === 0 && S.adult === null && S.saConfirmed === null;
   $('#navTitle').textContent = STEPS[S.step];
   const next = $('#nextBtn');
@@ -926,7 +944,7 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
   const onAssess = t.dataset.tab==='assess';
   $('#ctaBar').hidden = !onAssess;
   $('#backBtn').hidden = !onAssess || S.step===0;
-  $('#displayBtn').hidden = !onAssess || S.step!==0;
+  $('#displayBtns').hidden = !onAssess || S.step!==0;
   $('#resetBtn').hidden = !onAssess;
   $('#navTitle').textContent = onAssess ? STEPS[S.step] : t.textContent.trim();
   setY(0);
@@ -939,27 +957,22 @@ $('#scroller').addEventListener('scroll', onScroll, {passive:true});
 // Fill static icon tiles (About screen)
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = ICON[el.dataset.icon]);
 
-// Display preferences (appearance + text size). Remembered on this phone only.
+// Display toggles (dark mode, larger text) on the first screen. Remembered on this phone only.
 const PREF_KEY = 'sabguide_display';
 function loadPrefs(){ try { return JSON.parse(localStorage.getItem(PREF_KEY)) || {}; } catch(_) { return {}; } }
 function savePrefs(p){ try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch(_) {} }
 let PREFS = loadPrefs();
+const isDark = () => PREFS.theme ? PREFS.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
 function applyPrefs(){
   const root = document.documentElement;
+  PREFS.theme ? root.setAttribute('data-theme', PREFS.theme) : root.removeAttribute('data-theme');
   PREFS.text === 'large' ? root.setAttribute('data-text', 'large') : root.removeAttribute('data-text');
+  $('#darkBtn').setAttribute('aria-pressed', isDark());
+  $('#bigBtn').setAttribute('aria-pressed', PREFS.text === 'large');
 }
-function displayHTML(){
-  const opt = (v, inner, label) => `<button class="choice" role="radio" aria-checked="${(PREFS.text||'standard')===v}" aria-label="${label}" data-pref="text" data-pval="${v}">${inner}</button>`;
-  return `<div class="choices two" role="radiogroup" aria-label="Text size" style="margin-top:var(--s-2)">
-      ${opt('standard','<span style="font:600 15px/1 var(--font)">Aa</span><span>Standard</span>','Standard text')}${opt('large','<span style="font:600 21px/1 var(--font)">Aa</span><span>Large</span>','Large text')}</div>
-    <p style="font:var(--t-footnote);margin-top:var(--s-3)">Large text may add some scrolling on longer screens.</p>`;
-}
-$('#displayBtn').addEventListener('click', () => openSheet('Text size', displayHTML()));
-document.addEventListener('click', e => {
-  const b = e.target.closest('[data-pref]'); if (!b) return;
-  PREFS[b.dataset.pref] = b.dataset.pval; savePrefs(PREFS); applyPrefs(); haptic();
-  $('#sheetBody').innerHTML = displayHTML();
-});
+$('#darkBtn').addEventListener('click', () => { PREFS.theme = isDark() ? 'light' : 'dark'; savePrefs(PREFS); applyPrefs(); haptic(); });
+$('#bigBtn').addEventListener('click', () => { PREFS.text = PREFS.text === 'large' ? 'standard' : 'large'; savePrefs(PREFS); applyPrefs(); haptic(); });
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyPrefs);
 applyPrefs();
 
 // Sheet

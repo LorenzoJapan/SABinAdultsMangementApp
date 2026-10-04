@@ -83,14 +83,14 @@ Liu C, Chambers HF, Kern WV, Vandenesch F, et al. *2026 Consensus Statements by 
 
 **Not covered:** antibiotic choice (MRSA vs MSSA — future IDSA/ESCMID publications), focus-specific durations, children.
 
-## Text size
+## Dark mode & larger text
 
-The **Aa** button (top right of the first screen only) sets **Text size: Standard / Large**, remembered on the phone. Light/Dark follows the iPhone's own setting automatically. At Standard text no assessment screen scrolls; Large text adds some scrolling on longer screens.
+Two toggle buttons at the top right of the first screen (same style as Preop Clearance): the **moon** switches dark mode on/off and **AA** switches larger text on/off. They light up teal when on. Until the moon is tapped, the app follows the iPhone's Light/Dark setting. Both choices are remembered on the phone. At standard text no assessment screen scrolls; larger text adds some scrolling on longer screens.
 
 ## Intended use & privacy
 
 - **Clinical educational tool for clinicians** (physicians, advanced practice providers, pharmacists). Not a substitute for clinical judgment or ID consultation.
-- **No protected health information (PHI):** the app asks for no patient identifiers, saves no answers (only the text-size choice above), and sends nothing over the internet (no accounts, tracking or analytics). Designed for HIPAA-conscious use. Users should not enter identifiers.
+- **No protected health information (PHI):** the app asks for no patient identifiers, saves no answers (only the display choices above), and sends nothing over the internet (no accounts, tracking or analytics). Designed for HIPAA-conscious use. Users should not enter identifiers.
 
 ## Disclaimer
 
