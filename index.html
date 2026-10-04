@@ -121,12 +121,12 @@ em.sp{font-style:italic}
 
 .view{padding:0 var(--gutter) calc(var(--tabbar-h) + var(--safe-bottom) + 110px)}
 .view[hidden]{display:none}
-.large-title{font:var(--t-large-title);letter-spacing:-.01em;margin:2px 0 var(--s-3)}
-.subtitle{font:var(--t-callout);color:var(--c-ink-2);margin:calc(-1 * var(--s-2)) 0 var(--s-3)}
+.large-title{font:var(--t-large-title);letter-spacing:-.01em;margin:2px 0 var(--s-2)}
+.subtitle{font:var(--t-callout);color:var(--c-ink-2);margin:calc(-1 * var(--s-1)) 0 var(--s-3)}
 .centered{text-align:center}
 
 /* Progress */
-.progress{display:flex;gap:6px;margin:var(--s-2) 0 var(--s-3)}
+.progress{display:flex;gap:6px;margin:var(--s-2) 0 var(--s-2)}
 .progress span{flex:1;height:4px;border-radius:var(--r-pill);background:var(--c-line);overflow:hidden;position:relative}
 .progress span::after{content:"";position:absolute;inset:0;background:var(--c-primary);transform:scaleX(0);transform-origin:left;transition:transform var(--d-slow) var(--ease)}
 .progress span.done::after{transform:scaleX(1)}
@@ -143,7 +143,7 @@ em.sp{font-style:italic}
 .section-h{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--c-ink-2);margin:var(--s-4) var(--s-1) var(--s-2)}
 .card{background:var(--c-surface);border-radius:var(--r-lg);box-shadow:var(--elev-1);border:1px solid var(--c-line);overflow:hidden}
 .card + .card{margin-top:10px}
-.card-pad{padding:14px}
+.card-pad{padding:12px 14px}
 .card h3{font:var(--t-headline);margin-bottom:var(--s-1)}
 .card p,.card li{font:var(--t-callout);color:var(--c-ink-2)}
 .card ul{padding-left:1.1em}
@@ -204,6 +204,8 @@ em.sp{font-style:italic}
 .result p,.result li{color:var(--c-ink)}
 @keyframes rise{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}
 
+.result .factors{font:var(--t-footnote);color:var(--c-ink);margin-top:6px}
+.factors b{font-weight:600}
 .factor-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--s-3)}
 .factor-chips span{font:var(--t-footnote);font-weight:500;padding:5px 10px;border-radius:var(--r-pill);background:var(--c-surface);color:var(--c-ink);border:1px solid var(--c-line)}
 
@@ -225,9 +227,10 @@ em.sp{font-style:italic}
 .field label{font:var(--t-callout);font-weight:500}
 .field label small{display:block;font:var(--t-footnote);color:var(--c-ink-2);font-weight:400}
 .field input[type=date]{min-height:36px;padding:4px 10px;border-radius:8px;border:0;background:var(--c-surface-2);color:var(--c-primary);font:var(--t-callout);font-weight:500}
-.calc-out{padding:var(--s-4);background:var(--c-primary-soft);display:grid;gap:var(--s-2)}
-.calc-out div{display:flex;justify-content:space-between;font:var(--t-callout)}
-.calc-out b{font-weight:600}
+.calc-out{padding:10px var(--s-4);background:var(--c-primary-soft);display:grid;grid-template-columns:1fr 1fr;gap:var(--s-2)}
+.calc-out div{display:flex;flex-direction:column;font:var(--t-footnote);color:var(--c-ink-2)}
+.calc-out div + div{text-align:right}
+.calc-out b{font:var(--t-headline);color:var(--c-ink)}
 
 /* Buttons */
 .cta-bar{
@@ -276,7 +279,9 @@ em.sp{font-style:italic}
 .sheet.open{transform:none}
 .grabber{width:36px;height:5px;border-radius:3px;background:var(--c-line);margin:0 auto var(--s-4)}
 .sheet h2{font:var(--t-title);margin-bottom:var(--s-2)}
-.sheet p{font:var(--t-callout);color:var(--c-ink-2)}
+.sheet p,.sheet-body{font:var(--t-callout);color:var(--c-ink-2)}
+.sheet-body ul{padding-left:1.1em}
+.sheet-body li+li{margin-top:var(--s-2)}
 .sheet .btn{margin-top:var(--s-5)}
 
 /* Glossary & About */
@@ -446,7 +451,7 @@ details.term .def{padding-left:58px}
       <p class="ref">Liu C, Chambers HF, Kern WV, Vandenesch F, et al. <i>2026 Consensus Statements by the Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) on Staphylococcus aureus Bacteremia: Risk Stratification, Diagnostic Evaluation, and Management of Adults and Children.</i> Executive Summary, Consensus Statements 1–7.</p>
       <p class="meta">Developed jointly by IDSA and ESCMID, with PIDS, ESPID, SHEA, SIDP and ASHP representation. Correspondence: practiceguidelines@idsociety.org</p>
     </div>
-    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 1.9 · September 2026</p>
+    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.0 · October 2026</p>
   </main>
 
   </div><!-- /scroller -->
@@ -469,7 +474,7 @@ details.term .def{padding-left:58px}
   <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
     <div class="grabber"></div>
     <h2 id="sheetTitle"></h2>
-    <p id="sheetBody"></p>
+    <div id="sheetBody" class="sheet-body"></div>
     <button class="btn btn-secondary" id="sheetClose">Done</button>
   </div>
   <div class="toast" id="toast" role="status"></div>
@@ -563,7 +568,7 @@ const SAB = (() => {
         LONGER.forEach(l => { if (longer.has(l.id)) flags.push(l.label); });
         out.duration = { kind:'inc', days:14, label:'14', unit:'days', flags,
           text: flags.length
-            ? '14 days is the baseline, but a longer course guided by the likely focus should be considered. Reassess source control.'
+            ? 'Baseline 14 days; consider longer, guided by the likely focus. Reassess source control.'
             : '14 days, provided signs and symptoms have resolved and the tailored workup found no focus (Statement 7).' };
       }
     }
@@ -719,16 +724,16 @@ const view = {
   0(){ // Patient / scope
     const r = SAB.assess(S);
     let stop = '';
-    if (r.eligible === false) stop = `<div class="result neutral" style="margin-top:var(--s-5)"><div class="eyebrow">Outside this app's scope</div>
+    if (r.eligible === false) stop = `<div class="result neutral" style="margin-top:10px"><div class="eyebrow">Outside this app's scope</div>
       <h2>${r.reason==='child'?'Adults only':'Needs a positive culture'}</h2>
       <p>${r.reason==='child'
-        ? 'The 2026 statement gives separate guidance for children and neonates. Please use the pediatric sections and involve pediatric infectious diseases.'
-        : 'This guide applies to patients with at least one blood culture growing S. aureus. S. aureus is rarely a contaminant — a single positive bottle counts.'}</p></div>`;
+        ? 'Use the statement\'s pediatric guidance and involve pediatric ID.'
+        : 'Requires ≥1 blood culture growing S. aureus (rarely a contaminant).'}</p></div>`;
     return `<h1 class="large-title centered">Assess</h1>` + header(0,'New patient','Two quick checks before we start.') + `
-      <div class="hero">${tile('drop','teal',true)}<div><b><em class="sp">Staphylococcus Aureus</em> Bacteremia Management (adults)</b><span>Based on the 2026 IDSA/ESCMID consensus statements</span><div class="badges"><i>${ICON.people}Educational tool for clinicians</i><i>${ICON.checkShield}No patient data stored or sent</i></div></div></div>
+      <div class="hero">${tile('drop','teal',true)}<div><b><em class="sp">Staphylococcus Aureus</em> Bacteremia Management (adults)</b><span>2026 IDSA/ESCMID consensus statements</span><div class="badges"><i>${ICON.people}Educational tool for clinicians</i><i>${ICON.checkShield}No patient data stored or sent</i></div></div></div>
       <div class="card card-pad">${qh('person','teal','Is the patient 18 years or older?')}${radio('adult',[[true,'Yes'],[false,'No']],'two')}</div>
-      <div class="card card-pad">${qh('drop','rose','At least one blood culture growing <em class="sp">S. aureus</em>?')}
-        <p class="hint">Either methicillin-susceptible or resistant.</p>${radio('saConfirmed',[[true,'Yes'],[false,'No']],'two')}</div>${stop}`;
+      ${S.adult === false ? '' : `<div class="card card-pad">${qh('drop','rose','At least one blood culture growing <em class="sp">S. aureus</em>?')}
+        <p class="hint">Either methicillin-susceptible or resistant.</p>${radio('saConfirmed',[[true,'Yes'],[false,'No']],'two')}</div>`}${stop}`;
   },
   1(){ // Initial evaluation
     return header(1,'Initial evaluation','') + `
@@ -767,11 +772,11 @@ const view = {
       ? `<div class="result low"><div class="eyebrow">Risk stratification</div><h2>Low-risk SAB${r.provisional?' (provisional)':''}</h2>
          <p>${r.provisional ? 'Confirm once follow-up cultures and TTE are back.' : 'No risk factors. No workup needed beyond follow-up cultures and TTE.'}</p></div>`
       : `<div class="result inc"><div class="eyebrow">Risk stratification</div><h2>Increased-risk SAB</h2>
-         <p>Tailor the workup, guided by repeated exams.</p><div class="factor-chips">${chips.map(c=>`<span>${esc(c)}</span>`).join('')}</div></div>`;
+         <p>Tailor the workup, guided by repeated exams.</p><p class="factors"><b>${chips.length} risk factor${chips.length>1?'s':''}:</b> ${chips.map(c=>`<span>${esc(c)}</span>`).join(' · ')}</p></div>`;
     const TEE_UI = {
       obtain:['Get a TTE','Recommended for all adults (Statement 3).'],
       found:['Endocarditis on TTE','Deep-seated focus — go to the plan.',true],
-      suggested:['TEE suggested','Even if the TTE was good quality (Statement 4).',true],
+      suggested:['TEE suggested','Even if the TTE was good quality.',true],
       consider:['Consider TEE','Weigh TTE quality, other features, response and impact on care.'],
       judgment:['TEE: use judgment','Limited TTE without risk features is not directly addressed. Discuss with ID.',true],
       unnecessary:['TEE may be unnecessary','Good-quality negative TTE, no endocarditis features.'],
@@ -780,15 +785,15 @@ const view = {
     let rows = '';
     if (r.tee){ const [t,d,w] = TEE_UI[r.tee.level]; rows += adv('heart','coral',t,d,w); }
     if (r.risk === 'increased' && S.tte !== 'ie') {
-      rows += adv('search','blue','Symptom-directed imaging','E.g., MRI spine for back pain, CT chest/abdomen, venous duplex.');
-      if (r.wbi) rows += adv('scan','indigo','Whole-body imaging','Unknown focus: FDG-PET/CT, or combined imaging of likely sites (Statement 5).');
-      if (S.fubc48==='pos') rows += adv('clock','amber','Reassess source control','Culture positive ≥48 h. Repeat cultures daily until negative 2 days in a row.',true);
+      rows += adv('search','blue','Symptom-directed imaging','E.g., MRI spine, CT chest/abdomen, venous duplex.');
+      if (r.wbi) rows += adv('scan','indigo','Whole-body imaging','FDG-PET/CT or combined imaging of likely sites.');
+      if (S.fubc48==='pos') rows += adv('clock','amber','Reassess source control','Culture daily until negative 2 days in a row.',true);
     }
     return header(4,'Risk & workup','') + banner + `<div class="section-h">Next steps</div><div class="list">${rows}</div>`;
   },
   5(){ // Workup results (increased risk only)
     let html = header(5,'Workup results','') + `
-      <div class="card card-pad">${qh('target','coral','Deep-seated or metastatic focus?','Deep-seated focus')}
+      <div class="card card-pad">${qh('target','coral','Deep or metastatic focus?','Deep-seated focus')}
         ${radio('focus',[['yes','Found','target'],['no','Not found','xmark'],['ongoing','Still looking','hourglass']],'three stack')}</div>`;
     if (S.focus === 'no') html += `
       <div class="card card-pad">${qh('yes','green','Signs and symptoms resolved?')}${radio('resolved',[[true,'Yes'],[false,'No']],'two')}</div>
@@ -806,7 +811,7 @@ const view = {
     let html = header(6,'Plan','') + `<div class="result ${cls}"><div class="eyebrow">Final classification · ${r.risk==='low'?'low':'increased'} risk</div><h2>${title}</h2>`;
     if (r.classification==='pending') html += `<p>Finish the workup before fixing a duration. Continue treatment and reassess daily.</p>`;
     if (d) html += `<div class="duration">${tile('pills', d.kind==='focus'?'coral':'teal', true)}<span class="num">${d.label}</span><span class="unit">${d.unit}</span></div><p>${d.text}</p>
-        ${d.flags && d.flags.length ? `<div class="factor-chips">${d.flags.map(f=>`<span>${esc(f)}</span>`).join('')}</div>`:''}
+        ${d.flags && d.flags.length ? `<p class="factors"><b>Favors longer:</b> ${d.flags.map(f=>`<span>${esc(f)}</span>`).join(' · ')}</p>`:''}
         ${d.kind==='focus'?'<p style="margin-top:6px;font:var(--t-footnote)">Duration for each specific focus is not set by this statement — tailor with ID.</p>':''}`;
     html += `</div>`;
     if (d && d.days) {
@@ -814,14 +819,11 @@ const view = {
       html += `<div class="list" style="margin-top:var(--s-3)" aria-label="Day counter">
         <div class="field">${tile('calendar','green')}<label for="clr" style="flex:1">Clearance day<small>First negative = Day 1</small></label><input id="clr" type="date" data-date="clearDate" value="${S.clearDate}"></div>
         <div class="field">${tile('scan','indigo')}<label for="src" style="flex:1">Source control<small>Optional</small></label><input id="src" type="date" data-date="sourceDate" value="${S.sourceDate}"></div>
-        ${st ? `<div class="calc-out"><div><span>Day 1${st.basis==='source'?' (source control)':''}</span><b>${fmt(st.date)}</b></div>
-          <div><span>${d.kind==='focus'?'Earliest end · day 28':'Last day · day 14'}</span><b>${fmt(SAB.lastDay(st.date,d.days))}</b></div></div>` : ''}
+        ${st ? `<div class="calc-out"><div>Day 1 · ${st.basis==='source'?'source control':'clearance'}<b>${fmt(st.date)}</b></div>
+          <div>${d.kind==='focus'?'Earliest end · day 28':'Last day · day 14'}<b>${fmt(SAB.lastDay(st.date,d.days))}</b></div></div>` : ''}
       </div>`;
     }
-    html += `<details class="card kim" style="margin-top:var(--s-3)"><summary>${tile('info','slate')}Keep in mind${ICON.chev}</summary><ul>
-      <li>Risk is dynamic — re-examine daily; low risk can become increased risk.</li>
-      <li>Culture until negative. A later positive (skip phenomenon) moves Day 1.</li>
-      <li>Antibiotic choice (MRSA vs MSSA) is not covered by this statement.</li></ul></details>`;
+    html += `<div class="list" style="margin-top:var(--s-3)"><button class="row" data-kim="1">${tile('info','slate')}<span class="txt"><span class="t1">Keep in mind</span></span>${ICON.chev.replace('<svg','<svg style="width:16px;height:16px;color:var(--c-ink-2)"')}</button></div>`;
     return html;
   }
 };
@@ -870,6 +872,7 @@ function go(n){ dir = n > S.step ? 'fwd' : 'back'; S.step = n; setY(0); render()
 document.addEventListener('click', e => {
   const def = e.target.closest('[data-def]');
   if (def){ e.stopPropagation(); openSheet(def.dataset.def); return; }
+  if (e.target.closest('[data-kim]')){ openSheet('Keep in mind', KEEP_IN_MIND); return; }
   const set = e.target.closest('[data-set]');
   if (set){
     const k = set.dataset.set, v = JSON.parse(set.dataset.val);
@@ -922,7 +925,8 @@ $('#scroller').addEventListener('scroll', onScroll, {passive:true});
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = ICON[el.dataset.icon]);
 
 // Sheet
-function openSheet(term){ $('#sheetTitle').textContent = term; $('#sheetBody').textContent = DEFS[term] || ''; $('#scrim').classList.add('open'); $('#sheet').classList.add('open'); $('#sheetClose').focus(); }
+const KEEP_IN_MIND = '<ul><li>Risk is dynamic — re-examine daily; low risk can become increased risk.</li><li>Culture until negative. A later positive (skip phenomenon) moves Day 1.</li><li>Antibiotic choice (MRSA vs MSSA) is not covered by this statement.</li></ul>';
+function openSheet(term, html){ $('#sheetTitle').textContent = term; if (html) $('#sheetBody').innerHTML = html; else $('#sheetBody').textContent = DEFS[term] || ''; $('#scrim').classList.add('open'); $('#sheet').classList.add('open'); $('#sheetClose').focus(); }
 function closeSheet(){ $('#scrim').classList.remove('open'); $('#sheet').classList.remove('open'); }
 $('#scrim').addEventListener('click', closeSheet); $('#sheetClose').addEventListener('click', closeSheet);
 

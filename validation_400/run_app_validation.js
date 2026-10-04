@@ -56,7 +56,7 @@ async function runBatch(browser, batch, out, pageErrors) {
       r.classText = (await page.textContent('.result h2')).trim();
       r.durNum = await page.$eval('.duration .num', e => e.textContent.trim()).catch(() => null);
       r.durUnit = await page.$eval('.duration .unit', e => e.textContent.trim()).catch(() => null);
-      r.flags = await page.$$eval('.result .factor-chips span', els => els.map(e => e.textContent.trim()));
+      r.flags = await page.$$eval('.result .factors span', els => els.map(e => e.textContent.trim()));
       if (await page.$('#clr')) {
         await page.fill('#clr', c.clearDate); await page.dispatchEvent('#clr', 'change');
         if (c.sourceDate) { await page.fill('#src', c.sourceDate); await page.dispatchEvent('#src', 'change'); }
