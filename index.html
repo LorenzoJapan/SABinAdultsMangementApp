@@ -44,6 +44,7 @@
   --t-callout:400 16px/22px var(--font);
   --t-footnote:400 13px/18px var(--font);
   --t-caption:600 12px/16px var(--font);
+  --t-choice:500 15px/19px var(--font);
   --tracking-caps:.06em;
 
   /* Shape, space, depth */
@@ -78,6 +79,17 @@
     --c-overlay:rgba(0,0,0,.5);
     --elev-1:none; --elev-2:0 8px 24px -10px rgba(0,0,0,.6);
   }
+}
+/* Text size: Large (Aa button) — every text style steps up */
+:root[data-text="large"]{
+  --t-large-title:700 36px/43px var(--font-display);
+  --t-title:700 25px/31px var(--font-display);
+  --t-headline:600 20px/25px var(--font);
+  --t-body:400 20px/27px var(--font);
+  --t-callout:400 19px/25px var(--font);
+  --t-footnote:400 16px/21px var(--font);
+  --t-caption:600 14px/18px var(--font);
+  --t-choice:500 18px/22px var(--font);
 }
 @media (prefers-reduced-motion: reduce){
   :root{ --d-fast:0ms; --d-med:0ms; --d-slow:0ms; }
@@ -116,7 +128,8 @@ em.sp{font-style:italic}
 .nav-btn{min-height:var(--touch);min-width:var(--touch);display:inline-flex;align-items:center;gap:2px;color:var(--c-primary);font:var(--t-body);padding:0 var(--s-2);border-radius:var(--r-sm);transition:opacity var(--d-fast)}
 .nav-btn:active{opacity:.45}
 .nav-btn[hidden]{display:none}
-.nav-right{justify-self:end}
+.nav-right{justify-self:end;display:flex;align-items:center}
+.pref-h{font:var(--t-caption);text-transform:uppercase;letter-spacing:var(--tracking-caps);color:var(--c-ink-2);margin:var(--s-4) 0 var(--s-2)}
 .nav-btn svg{width:22px;height:22px}
 
 .view{padding:0 var(--gutter) calc(var(--tabbar-h) + var(--safe-bottom) + 110px)}
@@ -303,13 +316,13 @@ details.term .def{padding:0 var(--s-4) var(--s-4);font:var(--t-callout);color:va
 /* Compact answer layouts */
 .choices.three{grid-template-columns:repeat(3,1fr)}
 .choices.grid2{grid-template-columns:1fr 1fr}
-.choices.three .choice,.choices.grid2 .choice{justify-content:center;text-align:center;padding:8px 6px;font-size:15px;line-height:19px}
+.choices.three .choice,.choices.grid2 .choice{justify-content:center;text-align:center;padding:8px 6px;font:var(--t-choice)}
 .choices.three .choice .dot,.choices.grid2 .choice .dot{display:none}
 .choices.stack .choice{flex-direction:column;gap:3px;min-height:60px}
 /* Static advice rows (icon + title + one line) */
 .adv{display:flex;gap:var(--s-3);align-items:flex-start;padding:12px var(--s-4);position:relative}
 .adv + .adv::before{content:"";position:absolute;top:0;left:58px;right:0;height:.5px;background:var(--c-line)}
-.adv b{display:block;font:var(--t-headline);font-size:16px;color:var(--c-ink)}
+.adv b{display:block;font:var(--t-headline);color:var(--c-ink)}
 .adv b.warn{color:var(--c-inc)}
 .adv span.d{display:block;font:var(--t-footnote);color:var(--c-ink-2);margin-top:2px}
 /* Collapsible "keep in mind" */
@@ -395,7 +408,7 @@ details.term .def{padding-left:58px}
     <div><button class="nav-btn" id="backBtn" hidden aria-label="Back to previous step">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg><span>Back</span></button></div>
     <div class="nav-title" id="navTitle">SAB Guide</div>
-    <div class="nav-right"><button class="nav-btn" id="resetBtn" hidden>Start over</button></div>
+    <div class="nav-right"><button class="nav-btn" id="displayBtn" aria-label="Text size"><span style="font:600 17px/1 var(--font)">A</span><span style="font:600 12px/1 var(--font);margin-left:1px">a</span></button><button class="nav-btn" id="resetBtn" hidden>Start over</button></div>
   </header>
 
   <!-- ================= ASSESS ================= -->
@@ -442,7 +455,7 @@ details.term .def{padding-left:58px}
     <div class="card card-pad" style="margin-top:var(--s-3)"><div class="card-h"><span class="tile" style="--tile:var(--i-green)" data-icon="checkShield"></span><h3>Privacy</h3></div>
       <ul>
         <li><b>No protected health information (PHI).</b> The app never asks for names, record numbers or other patient identifiers — please don't type any in.</li>
-        <li>Answers stay on this device, are not saved, and clear when you tap Start over or close the app.</li>
+        <li>Answers stay on this device, are not saved, and clear when you tap Start over or close the app. Only your text-size choice is remembered on this phone.</li>
         <li>Nothing is sent over the internet — no accounts, tracking or analytics.</li>
         <li>Designed for HIPAA-conscious use.</li>
       </ul>
@@ -451,7 +464,7 @@ details.term .def{padding-left:58px}
       <p class="ref">Liu C, Chambers HF, Kern WV, Vandenesch F, et al. <i>2026 Consensus Statements by the Infectious Diseases Society of America (IDSA) and European Society of Clinical Microbiology and Infectious Diseases (ESCMID) on Staphylococcus aureus Bacteremia: Risk Stratification, Diagnostic Evaluation, and Management of Adults and Children.</i> Executive Summary, Consensus Statements 1–7.</p>
       <p class="meta">Developed jointly by IDSA and ESCMID, with PIDS, ESPID, SHEA, SIDP and ASHP representation. Correspondence: practiceguidelines@idsociety.org</p>
     </div>
-    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.0 · October 2026</p>
+    <p class="meta" style="text-align:center;margin-top:var(--s-6)">Developed by MDGadgetz LLC<br>SAB Guide · version 2.3 · October 2026</p>
   </main>
 
   </div><!-- /scroller -->
@@ -730,7 +743,7 @@ const view = {
         ? 'Use the statement\'s pediatric guidance and involve pediatric ID.'
         : 'Requires ≥1 blood culture growing S. aureus (rarely a contaminant).'}</p></div>`;
     return `<h1 class="large-title centered">Assess</h1>` + header(0,'New patient','Two quick checks before we start.') + `
-      <div class="hero">${tile('drop','teal',true)}<div><b><em class="sp">Staphylococcus Aureus</em> Bacteremia Management (adults)</b><span>2026 IDSA/ESCMID consensus statements</span><div class="badges"><i>${ICON.people}Educational tool for clinicians</i><i>${ICON.checkShield}No patient data stored or sent</i></div></div></div>
+      ${r.eligible === false ? '' : `<div class="hero">${tile('drop','teal',true)}<div><b><em class="sp">Staphylococcus Aureus</em> Bacteremia Management (adults)</b><span>2026 IDSA/ESCMID consensus statements</span><div class="badges"><i>${ICON.people}Educational tool for clinicians</i><i>${ICON.checkShield}No patient data stored or sent</i></div></div></div>`}
       <div class="card card-pad">${qh('person','teal','Is the patient 18 years or older?')}${radio('adult',[[true,'Yes'],[false,'No']],'two')}</div>
       ${S.adult === false ? '' : `<div class="card card-pad">${qh('drop','rose','At least one blood culture growing <em class="sp">S. aureus</em>?')}
         <p class="hint">Either methicillin-susceptible or resistant.</p>${radio('saConfirmed',[[true,'Yes'],[false,'No']],'two')}</div>`}${stop}`;
@@ -852,6 +865,7 @@ function render(){
   stage.classList.remove('step-enter','step-back'); void stage.offsetWidth;
   stage.classList.add(dir==='back'?'step-back':'step-enter');
   $('#backBtn').hidden = S.step === 0;
+  $('#displayBtn').hidden = S.step !== 0;
   $('#resetBtn').hidden = S.step === 0 && S.adult === null && S.saConfirmed === null;
   $('#navTitle').textContent = STEPS[S.step];
   const next = $('#nextBtn');
@@ -912,6 +926,7 @@ document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () =>
   const onAssess = t.dataset.tab==='assess';
   $('#ctaBar').hidden = !onAssess;
   $('#backBtn').hidden = !onAssess || S.step===0;
+  $('#displayBtn').hidden = !onAssess || S.step!==0;
   $('#resetBtn').hidden = !onAssess;
   $('#navTitle').textContent = onAssess ? STEPS[S.step] : t.textContent.trim();
   setY(0);
@@ -923,6 +938,29 @@ addEventListener('scroll', onScroll, {passive:true});
 $('#scroller').addEventListener('scroll', onScroll, {passive:true});
 // Fill static icon tiles (About screen)
 document.querySelectorAll('[data-icon]').forEach(el => el.innerHTML = ICON[el.dataset.icon]);
+
+// Display preferences (appearance + text size). Remembered on this phone only.
+const PREF_KEY = 'sabguide_display';
+function loadPrefs(){ try { return JSON.parse(localStorage.getItem(PREF_KEY)) || {}; } catch(_) { return {}; } }
+function savePrefs(p){ try { localStorage.setItem(PREF_KEY, JSON.stringify(p)); } catch(_) {} }
+let PREFS = loadPrefs();
+function applyPrefs(){
+  const root = document.documentElement;
+  PREFS.text === 'large' ? root.setAttribute('data-text', 'large') : root.removeAttribute('data-text');
+}
+function displayHTML(){
+  const opt = (v, inner, label) => `<button class="choice" role="radio" aria-checked="${(PREFS.text||'standard')===v}" aria-label="${label}" data-pref="text" data-pval="${v}">${inner}</button>`;
+  return `<div class="choices two" role="radiogroup" aria-label="Text size" style="margin-top:var(--s-2)">
+      ${opt('standard','<span style="font:600 15px/1 var(--font)">Aa</span><span>Standard</span>','Standard text')}${opt('large','<span style="font:600 21px/1 var(--font)">Aa</span><span>Large</span>','Large text')}</div>
+    <p style="font:var(--t-footnote);margin-top:var(--s-3)">Large text may add some scrolling on longer screens.</p>`;
+}
+$('#displayBtn').addEventListener('click', () => openSheet('Text size', displayHTML()));
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-pref]'); if (!b) return;
+  PREFS[b.dataset.pref] = b.dataset.pval; savePrefs(PREFS); applyPrefs(); haptic();
+  $('#sheetBody').innerHTML = displayHTML();
+});
+applyPrefs();
 
 // Sheet
 const KEEP_IN_MIND = '<ul><li>Risk is dynamic — re-examine daily; low risk can become increased risk.</li><li>Culture until negative. A later positive (skip phenomenon) moves Day 1.</li><li>Antibiotic choice (MRSA vs MSSA) is not covered by this statement.</li></ul>';

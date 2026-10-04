@@ -83,10 +83,14 @@ Liu C, Chambers HF, Kern WV, Vandenesch F, et al. *2026 Consensus Statements by 
 
 **Not covered:** antibiotic choice (MRSA vs MSSA — future IDSA/ESCMID publications), focus-specific durations, children.
 
+## Text size
+
+The **Aa** button (top right of the first screen only) sets **Text size: Standard / Large**, remembered on the phone. Light/Dark follows the iPhone's own setting automatically. At Standard text no assessment screen scrolls; Large text adds some scrolling on longer screens.
+
 ## Intended use & privacy
 
 - **Clinical educational tool for clinicians** (physicians, advanced practice providers, pharmacists). Not a substitute for clinical judgment or ID consultation.
-- **No protected health information (PHI):** the app asks for no patient identifiers, saves nothing, and sends nothing over the internet (no accounts, tracking or analytics). Designed for HIPAA-conscious use. Users should not enter identifiers.
+- **No protected health information (PHI):** the app asks for no patient identifiers, saves no answers (only the text-size choice above), and sends nothing over the internet (no accounts, tracking or analytics). Designed for HIPAA-conscious use. Users should not enter identifiers.
 
 ## Disclaimer
 

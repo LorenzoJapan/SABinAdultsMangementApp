@@ -92,6 +92,9 @@ A running list of what you should be able to explain in your own words. Boxes ge
 ## Session log
 - Sep 23: Files built. Starting point: "start me from zero."
 - Sep 23: Lesson 1 quiz — correct on "what decides duration" and "why old labels were dropped"; needed help on "why one risk factor is enough."
+- Oct 4: v2.3 — Aa button only on the first screen, text size only; Light/Dark follows the phone.
+- Oct 4: v2.2 — Aa display panel: Light/Dark and Standard/Large text, remembered on the phone; accuracy still 400/400.
+- Oct 4: v2.1 — out-of-scope message hides the title card so it fits; full 400-patient × 3-phone scroll check passed.
 - Oct 4: v2.0 — zero scrolling on every assessment step (13–17 Pro Max, worst-case content); factors/warnings shown as one line; Keep in mind opens as a sheet; validation re-run 400/400.
 - Sep 25: 400-patient validation: 400/400 correct after one answer-key fix; 3/3 planted bugs caught.
 - Sep 25: v1.9 — labeled as a clinical educational tool for clinicians; privacy card and "No patient data stored or sent" badge.
